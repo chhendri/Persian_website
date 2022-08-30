@@ -1,0 +1,68 @@
+ce/cet(proche),in,این
+réveillé,bidar,بیدار
+viens,bia,بیا
+quoi/quel,chi,چی
+qui,ki,کی
+pomme,sib,سیب
+beau,ziba,زیبا
+mur,divar,دیوار
+vieux,pir,پیر
+sale,kasif,کثیف
+blanc,sefid,سفید
+obscurité,siahi,سیاهی
+ce/cet(loin),ân,آن
+soir/nuit,chab,شب
+doucement,yavarch,یورش
+doucement,ahesté,آهسته
+attaque,youresch,یورش
+révéiller quelquun,bidar kardan,بیدار کردن
+se réveiller,bidar chodan,بیدار شدن
+venir,âmadan,آمدن
+quest-ce que cest?,ché,چیه
+grand,bozorg,بزرگ
+enchanté de vous connaitre,xochvartam,خوش وقتم
+excusez-moi,bebanchid,ببخشید
+marié,moté ahel,متا هل
+juste,dorost,درست
+faux,nodorost,نادرست
+célibataire,magarrad,محرد
+paresseux,tonbal,تنبل
+jaune,zardi,زرد
+neige,barf,برف
+mieux,choubtar,خوبتر
+mauvais,bad,بد
+pire,badtar,بدتر
+main,dast,دست
+bracelet,dastband,دستبند
+lire/chanter,khandan,خواندن
+aider,komak kardom,کمک کردن
+humain,adam,آدم
+table,miz,میز
+dedans,tou,تو
+sourcil,abrou,ابرو
+réputation,abérou,آبرو
+chaise,sandali,صندلی
+chien,sag,سگ
+arbre,deraht,درخت
+fleur,gol,گل
+roue,chahr,چرخ
+proche,nasdik,نزدیک
+sous,zir,زیر
+ordinateur,komputer,کامپیوتر
+cinéma,cinema,سینما
+pistache,peste,پسته
+sandales,dampaii,دمپایی
+larme,achk,اشک
+fille,dochtar,دحتر
+rue,xiaban,خیابان
+boisson,nouchidani,نوشیدنی
+repas,raza,غزا
+vêtement,lebas,لباس
+délicieux,xochmazé,خوشمزه
+étroit,tang,تنگ
+froid,sard,سرد
+propre,tamiz,تمیز
+chaud,garm,گرم
+vélo,do chahr,
+oiseau,parande,پرنده
+chameau,chotor,شتر

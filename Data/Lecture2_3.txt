@@ -1,0 +1,138 @@
+à pied,piade,پیاده
+au travail,sare kar,سر کار
+école,madrase,مدرسه
+week-end,ahar hafte,آخر هفته
+amusez-vous bien,choch begzarad,خوش بگذرد
+tous les jours,har rouz,هر روز
+j arrive,resam,رسم
+quelles nouvelles,che xabar,چه خبر
+peut-être,chaiad,شاید
+page,safhe,صفحه
+exercice,tamrin,تمرین
+montre (poignet),saate mochi,ساعت مچی
+dialogue,goftogou,گفتگو
+bureau de police,edareye polis,اداره پلیس
+jupe,daman,دامن
+prendre une douche,douch gereftan,دوش گرفتن
+sol,zamin,زمین
+gourde,qomqame,قمقمه
+bouteille,batri,بطری
+quelle couleur,che rangi,چه رنگی
+veste,kote,کت
+ruelle,kouche,کوچه
+révolution,enqelab,انقلاب
+écrire une lettre,name nevechtan,نمه نوشتن
+pour,baraie,برای
+rideau,parde,پرده
+télévision,television,تلویزیون
+comode,komod,کمد
+rendez-vous,qaraz,قرار
+salle de sport,bachgah,باشگاه
+cinéma,sinema,سینما
+toutes les semaines,har hafte,هر هفته
+pas mal,bad nistam,بد نیستم
+santé,salamati,سلامتی
+travail,edare,اداره
+tirer,kechidan,کشیدن
+je tire,man mi kecham,من می کشم
+tu tires,to mi kechi,تو می کشی
+il tire,ou mi kechad,او می کشد
+nous tirons,ma mi kechim,ما می کشیم
+vous tirez,choma mi kechid,شما می کشید
+ils tirent,anha mi kechand,آنها می کشند
+boire,nouchidan,نوشیدن
+je bois,man mi noucham,من می نوشم
+tu bois,to mi nouchi,تو می نوشی
+il boit,ou mi nouchad,او می نوشد
+nous buvons,ma mi nouchim,ما می نوشیم
+vous buvez,choma mi nouchid,شما می نوشید
+ils boivent,anha mi nouchand,آنها می نوشند
+faire,kardan,کردن
+je fais,man mi konam,من می کنم
+tu fais,to mi koni,تو می کنی
+il fait,ou mi konad,او می کند
+nous faisons,ma mi konim,ما می کنیم
+vous faisez,choma mi konid,شما می کنید
+ils font,anha mi konand,آنها می کنند
+dire,gouftan,گفتن
+je dis,man mi gouiam,من می گویم
+tu dis,to mi gouii,تو می گویی
+il dit,ou mi gouiad,او می گوید
+nous disons,ma mi gouiim,ما می گویم
+vous dites,choma mi gouiid,شما می گوید
+ils disent,anha mi gouiand,آنها می گویند
+voir,didan,دیدن
+je vois,man mi binam,من می بینم
+tu vois,to mi bini,تو می بینی
+il voit,ou mi binad,او می بیند
+nous voyons,ma mi binim,ما می بینیم
+vous voyez,choma mi binid,شما می بینید
+ils voyent,anha mi binand,آنها می بینند
+entendre,chenidan,شنیدن
+j entends,man mi chenavam,من می شنوم
+tu entends,to mi chenavi,تو می شنوی
+il entend,ou mi chenavad,او می شنود
+nous entendons,ma mi chenavim,مامی شنویم
+vous entendez,choma mi chenavid,شما می شنوید
+ils entendent,anha mi chenavand,آنها می شنوند
+rester,mandan,مندن
+je reste,man mi manam,من می مانم
+tu restes,to mi mani,تو می مانی
+il reste,ou mi manad,او می ماند
+nous restons,ma mi manim,ما می مانیم
+vous restez,choma mi manid,شما می مانید
+ils restent,anha mi manand,آنها می مانند
+arriver,residan,رسیدن
+j arrive,man mi resam,من می رسم
+tu arrives,to mi resi,تو می رسی
+il arrive,ou mi resad,او می رسد
+nous arrivons,ma mi resim,ما می رسیم
+vous arrivez,choma mi resid,شما می رسید
+ils arrivent,anha mi resand,آنها می رسند
+prier,khahech kardan,خواهش کردن
+vivre,zendegi kardan,زندگی کردن
+nager,chena kardan,شنا کردن
+aider,komak kardan,کمک کردن
+comprendre,fahmidan,فهمیدن
+je comprends,man mi fahmam,من می فهمم
+tu comprends,to mi fahmi,تو می فهمی
+il comprend,ou mi fahmad,او می فهمد
+nous comprennons,ma mi fahmim,ما می فهمیم
+vous comprennez,choma mi fahmid,شما می فهمید
+ils comprennent,anha mi fahmand,آنها می فهمند
+imprimer,chabgar kardan,چابگر کردن
+s asseoir,nechastan,نشستن
+je m assied,man mi nechinam,من می نشینم
+tu t assieds,to mi nechini,تو می نشینی
+il s assied,ou mi nechinad,او می نشیند
+nous nous asseyons,ma mi nechinim,ما می نشینیم
+vous vous asseyez,choma mi nechinid,شما می نشیدید
+ils s asseyent,anha mi nechinand,آنها می نشینند
+arriver,residan,رسیدن
+j arrive,man mi resam,من می رسم
+tu arrives,to mi resi,تو می رسی
+il arrive,ou mi resad,او می رسد
+nous arrivons,ma mi resim,ما می رسیم
+vous arrivez,choma mi resid,شما می رسید
+ils arrivent,anha mi resand,آنها می رسند
+donner,dadan,دادن
+je donne,man mi daham,من می دهم
+tu donnes,to mi dahi,تو می دهی
+il donne,ou mi dahad,او می دهد
+nous donnons,ma mi dahim,ما می دهیم
+vous donnez,choma mi dahid,شما می دهید
+ils donnent,anha mi dahand,آنها می دهند
+connaitre,chenaxtan,شناختن
+je connais,man mi chenasam,من می شنسم
+tu connais,to mi chenasi,تو می شنسی
+il connait,ou mi chenasad,او می شنسد
+nous conaissons,ma mi chenasim,ما می شنسیم
+vous conaissez,choma mi chenasid,شما می شنسید
+ils conaissent,anha mi chenasand,آنها می شنسند
+savoir,danestan,دانستن
+je sais,man mi danam,من می دانم
+tu sais,to mi dani,تو می دانی
+il sait,ou mi danad,او می داند
+nous savons,ma mi danim,ما می دانیم
+vous conaissez,choma mi danid,شما می دانید
+ils conaissent,anha mi danand,آنها می دانند

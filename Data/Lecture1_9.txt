@@ -1,0 +1,108 @@
+grève,etesab,احتصاب
+rose,gol e ros,گل روز
+autoroute,autobân,اوتوبان
+calme,aram,آرام
+ici,inja,اینجا
+rire,chande,خنده
+glaçon,iach,یخ
+gentilesse,mehrabani,مهربانی
+monde,halam,عالم
+repas du soir,cham,شام
+écouter,gouch dadan,گوش دادن
+tard,dir,دیر
+proche,nasdiq,نزدیک
+pharmacie,darou xané,دارو خانه
+maintenant,alan,الان
+habitant,sâkan,ساکن
+employé entreprise,karmand yek charkat,کارمند یک شرکت
+mais,vali,ولی
+embassade,sefarat,سغارت
+actrice,honarpiché,هنر پیشه
+pourquoi,chara,چرا
+vite,zoud,زود
+dormir,khabidan,خوابیدن
+laver les mains,dast chastan,دست شستن
+court,xiatat,حیاص
+jardin,bacht,باغ
+poumon,choch,شش
+année,sal,سال
+cette année,emsal,امسال
+année passée,parsal,پارسال
+année prochaine,sal ayande,سال آینده
+demande,be pars,بپرس
+exemple,nemoune,نمونه
+à moi,male man,مال من
+à toi,male to,مال تو
+lieu de travail,mahalle kar,محل کار
+bureau de travail,daftare kar,دفتر کار
+parque,park,پارک
+lieu,mahal,محل
+quartier,mahalle,محله
+hôpital,bimaristân,بیمارستان
+trop curieux,fozoul,فضول
+curieux,konchkab,کنجکاب
+comment,cetor,چصور
+cuisine,achpaz xané,آشپز خانه
+bibliothèque,ketab xané,کتاب خانه
+salle de lecture,otaq motalhe,اتاق مصالعه
+chambre à coucher,otaq chab,اتاق خواب
+salle de bain,hammam,حمّام
+toilettes,dast chouii,دستشویی
+salon,salon,سالن
+mais,âmmâ,آمّا
+j ai,man daram,من دارم
+tu as,to dari,تو داری
+il/elle a,ou darad,او دارد
+nous avons,ma darim,ما داریم
+vous avez,choma darid,شما دارید
+ils ont,ânhâ darand,آنها دارند
+quel âge as-tu?,to chand sal dari?,تو چند سال داری؟
+quel âge as-tu,to chand salat ast?,تو چند سالت است؟
+mon livre,ketabam,کتابم
+ton livre,ketabat,کتابت
+son livre,ketabach,کتابش
+notre livre,ketabeman,کتابمان
+votre livre,ketabetan,کتابتان
+leur livre,ketabechan,کتابشان
+parking,parking,پارکینگ
+dortoir,khabgah,خوابگاخه
+loin,dour,دور
+camarade de klasse,hamkelas,هم کلاس
+c est juste,dariran,درایران
+pot de fleurs,goldân,گلدان
+chemin/route,râh,راه
+lune/mois,mâh,ماه
+autoroute,bozorg râh,بزرگ راه
+tombe/cimetière,âramgâh,آرامگاه
+oiseau,parande,پرنده
+chant oiseau,chah chah,چه چه
+sourire,labjand,لبخند
+frigo,iachchal,یخچال
+paradis,behecht,بحشت
+gentil,mehraban,مهربان
+large,pahn,پهن
+magasine,maghalle,مجله
+monde,jehan,جهان
+clair de lune,mahtab,مهتاب
+visage,chechr,چهره
+là,anja,آنجا
+repas du midi,nahar,ناهار
+argent,poul,پول
+bénéfice,soud,سود
+salé,chour,شور
+rivière,roud,رود
+Ouganda,ouganda,اوگاندا
+oreille,gouch,گوش
+théillière,gouri,قوری
+four,tanour,تنور
+manque,kamboud,کمبود
+tôt,zoud,زود
+lumière,nour,نور
+loin,dour,دور
+couverture,patou,پتو
+odeur,bou,بو
+médicament,dârou,دارو
+aiguille,souzan,سوزن
+brûlant,souzân,سوزان
+vache,gou,گاو
+bain,van,وان
