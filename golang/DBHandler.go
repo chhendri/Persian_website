@@ -19,7 +19,7 @@ func connectDB(w http.ResponseWriter, r *http.Request) {
     // Capture connection properties.
     cfg := mysql.Config{
         User:   "Persian_dvl",
-        Passwd: "dvl",
+        Passwd: "password",
         Net:    "tcp",
         Addr:   "127.0.0.1:3306",
         DBName: "Persian",
