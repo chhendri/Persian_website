@@ -3,13 +3,13 @@ steps:
     args:
       - build
       - '-t'
-      - eu.gcr.io/persian-365010/persian-website-golang
+      - gcr.io/persian-365010/persian-website-golang
       - '-f'
       - docker/golang/Dockerfile
       - .
   - name: gcr.io/cloud-builders/docker
     args:
       - push
-      - eu.gcr.io/persian-365010/persian-website-golang
+      - gcr.io/persian-365010/persian-website-golang
 options:
   logging: CLOUD_LOGGING_ONLY
