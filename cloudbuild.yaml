@@ -11,3 +11,5 @@ steps:
     args:
       - push
       - eu.gcr.io/cloudrun/persian-website-golang
+options:
+  logging: CLOUD_LOGGING_ONLY
