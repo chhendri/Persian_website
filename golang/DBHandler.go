@@ -30,6 +30,7 @@ func connectDB(w http.ResponseWriter, r *http.Request) {
         Net:    "tcp",
         Addr:   getEnv("MYSQL_HOST", "127.0.0.1:3306"),
         DBName: getEnv("MYSQL_DATABASE", "Persian"),
+        AllowNativePasswords: true,
     }
     // Get a database handle.
     var err error
