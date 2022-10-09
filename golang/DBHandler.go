@@ -26,7 +26,7 @@ func connectDB(w http.ResponseWriter, r *http.Request) {
     // Capture connection properties.
     cfg := mysql.Config{
         User:   getEnv("MYSQL_USER", "Persian_dvl"),
-        Passwd: getEnv("MYSQL_ROOT_PASSWORD", "password"),
+        Passwd: getEnv("MYSQL_PASSWORD", "password"),
         Net:    "tcp",
         Addr:   getEnv("MYSQL_HOST", "127.0.0.1:3306"),
         DBName: getEnv("MYSQL_DATABASE", "Persian"),
