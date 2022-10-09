@@ -1,0 +1,82 @@
+film,film,فیلم
+intéressant,jaleb,خالب
+ouvert,baz,باز
+cheveux,moui,موی
+blanc,sefid,سفید
+temps (météo),hawa,هوا
+voisin,hamsajé,همسایه
+robe,pirahan,پیراحن
+librairie,ketabfarouchi,کتابفروشی
+heure,sahat,ساحت
+élève,chagerd,شاگرد
+collocataires,hamxane,همخانه
+lever,xastan,خاستن
+gris,xakestari,خاکستری
+cendres,xakestar,خاکستر
+réalisateur,kargardan,کارگردان
+malade,bimar,بیمار
+malade,mariz,مریض
+psychologue,ravan chenas,روانشناس
+psychiatre,ravan pezechk,روانپز
+parce-que,zira,زیرا
+miroir,ayene,آینه
+stylo,khodkar,خودکار
+à qui,malé kist,مال کیست
+rouge,qermez,قرمز
+célèbre,mahrouf,معروف
+famille,xanevarde,خانواده
+vivre,zendeh,زنده
+aimer,doust dachtan,دوست داشتن
+aucun,hitch,هیچ
+tu dis la vérité,rast migoui,رست میگویی
+pourquoi,chera,چرا
+qui,chi/che,چی
+comment,cetor,چطور
+combien (non dénombrable),chekadr,چقدر
+combien (dénombrable),chand,چند
+quand,kei,کی
+qui,ki,کی
+où,kodja,کجا
+quel,kodam,کدام
+vaccin,vaccin,واکسن
+psy,ravan,روان
+vache,gav,گاو
+bâteau de guerre,nav,ناو
+boulanger,nânva,نانوا
+boulangerie,nânvaii,نانوایی
+papillon,parvane,پروانه
+pantalon,chalvar,شلوار
+force,tawan,توان
+soleil,khorchid,خورشید
+moto,motor,موتور
+encore,dobare,دوباره
+soeur,khahar,خواهر
+lire/chanter,khandan,خواندن
+sommeil,khab,خواب
+dormir,khabidan,خوابیدن
+pointe du crayon,noke medad,نوک مداد
+demande,khahech,خواهش
+vouloir,khastan,خواستن
+gelée,gele,ژله
+cils,moja,مژه
+gilet,jackat,ژاکت
+savon,saboun,صابون
+paupière,pilk,پلک
+Égypte,mesr,مصر
+comprimés,qors,قرص
+jetons,jeton,ژتون
+abajour,abajour,آباژور
+feutres (dessin),magik,ماژیک
+massage,mâsâj,ماساژ
+visage,sourat,صورت
+rose (couleur),sourati,صورتی
+rouge à lèvres,roj,رژ
+palais,qasr,قصر
+coquillage,sodaf,صدف
+garage,garag,گاراژ
+spécial,mahsous,مخصوص
+animal,heivan,حیوان
+animaux,heivanat,حیوانات
+petit-déjeuner,sobâhne,صبحانه
+matin,sobh,صبح
+espace,faza,فضا

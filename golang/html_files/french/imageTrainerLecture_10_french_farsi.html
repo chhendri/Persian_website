@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {
+  color: #274c77;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:50px;
+  margin-bottom:40px;
+}
+h2 {
+  color: #274c77;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  color: #274c77;
+  background-color: #e7ecef;
+  font-size: 19px;
+  border: 1px solid #8b8c89;
+  padding: 15px 50px;
+  cursor: pointer;
+  margin-top:50px;
+  margin-right:10px;
+}
+button:hover {
+  color: #e7ecef;
+  background-color: #274c77;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 20px;
+  overflow: hidden;
+  float:left;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #e7ecef;
+  color: white;
+  transform: rotateY(180deg);
+  border: 3px solid #274c77;
+}
+
+body {
+  background-color:#e7ecef;
+}
+</style>
+</head>
+<body>
+
+<h1>Learn vocabulary with images</h1>
+<h2>Hover over the image to get the persian and english word</h2>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img231.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>فیلم</h2>
+<h2>film</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img88.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>باز</h2>
+<h2>ouvert</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img134.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>موی</h2>
+<h2>cheveux</h2>
+</div>
+</div>
+</div>
+</body>
+</html>

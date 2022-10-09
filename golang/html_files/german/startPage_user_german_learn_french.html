@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>startPage</title>
+<style>
+  h1 {
+    color: #274c77;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:50px;
+    margin-bottom:40px;
+  }
+  h2 {
+    color: #274c77;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  button {
+    color: #274c77;
+    background-color: #e7ecef;
+    font-size: 19px;
+    border: 1px solid #8b8c89;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin-top:50px;
+    margin-right:10px;
+  }
+  button:hover {
+    color: #e7ecef;
+    background-color: #274c77;
+  }
+  selected_button {
+    color: #e7ecef;
+    background-color: #274c77;
+    font-size: 19px;
+    border: 1px solid #8b8c89;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin-top:50px;
+    margin-right:10px;
+  }
+  body {
+    background-color:#e7ecef;
+  }
+  div_spacer {
+    background:#e7ecef;
+    height:50px;
+    display:inline-block
+  }
+</style>
+</head>
+
+<body>
+  <h1>Learn Persian</h1>
+  <h2>Learn Persian with this interactive site</h2>
+  <div_spacer></div_spacer>
+
+  <p>
+    <div align="center">
+      <h2> Choose the language you are confortable in </h2>
+      <form action="/chooseLanguageUser" method="POST">
+        <button type="submit" name="farsi" value="farsi">Farsi</button>
+        <button type="submit" name="french" value="french">French</button>
+        <selected_button type="submit" name="german" value="german">German</selected_button>
+      </form>
+    </div>
+
+    <div_spacer></div_spacer>
+
+    <div align="center">
+      <h2> Choose the language you want to learn </h2>
+      <form action="/chooseLanguageToLearn" method="POST">
+        <button type="submit" name="german" value="german">Farsi</button>
+        <selected_button type="submit" name="french" value="french">French</selected_button>
+      </form>
+    </div>
+
+    <div_spacer></div_spacer>
+
+    <div align="center">
+      <h2>Choose what you want to do</h2>
+      <form action="/chooseAction" method="POST">
+        <button type="submit" name="wordList" value="wordList">Vocabulary list</button>
+        <button type="submit" name="wordTrainer" value="wordTrainer">Train words</button>
+        <button type="submit" name="imageTrainer" value="imageTrainer">Train with images</button>
+      </form>
+    </div>
+  </p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+papa,baba,بابا
+pain,nân,نان
+vent,bâd,باد
+charge,bâr,بار
+pluie,baran,باران
+farine,ard,آرد
+nuages,âbr,آبر
+grenade,ânar,آنار
+porte,dar,در
+précieux,nâb,ناب
+cri,dâd,داد
+justice,dâd,داد
+sage,dana,دانا
+maman,maman,مامان
+balançoire,tâb,تاب
+crayon,medad,مداد
+aide,mâdad,مدد
+loin,qârîb,غریب
+fin,payan,پایان
+ignorant,nâdân,نادان
+ville,chahr,شهر
+village,rousta,روستا
+introduction,pesh dars,پیش درس
+Merci beaucoup.,Xêyli mamnoumam,خیلی ممنونم
+monsieur,âqâ,آقا
+madame,xânom,خانم
+merci,montéchakéram,متشکرم
+Au revoir (que dieu te protège),xôdâ hâfez,خدا حافظ
+Au revoir (que dieu te protège),xôdâ négahdâr,خدا نگهدار
+Au revoir (je te souhaite la santé),bé salamat,به سلامت
+Au revoir (ton serviteur),gorbanât,قربانت

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {
+  color: #274c77;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:50px;
+  margin-bottom:40px;
+}
+h2 {
+  color: #274c77;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  color: #274c77;
+  background-color: #e7ecef;
+  font-size: 19px;
+  border: 1px solid #8b8c89;
+  padding: 15px 50px;
+  cursor: pointer;
+  margin-top:50px;
+  margin-right:10px;
+}
+button:hover {
+  color: #e7ecef;
+  background-color: #274c77;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 20px;
+  overflow: hidden;
+  float:left;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #e7ecef;
+  color: white;
+  transform: rotateY(180deg);
+  border: 3px solid #274c77;
+}
+
+body {
+  background-color:#e7ecef;
+}
+</style>
+</head>
+<body>
+
+<h1>Learn vocabulary with images</h1>
+<h2>Hover over the image to get the persian and english word</h2>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img262.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Streik</h2>
+<h2>grève</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img263.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Rose</h2>
+<h2>rose</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img264.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Autobahn</h2>
+<h2>autoroute</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img210.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Ruhe</h2>
+<h2>calme</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img210.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>hier</h2>
+<h2>ici</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img265.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Welt</h2>
+<h2>monde</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img266.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Abendmahlzeit</h2>
+<h2>repas du soir</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img42.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>spät</h2>
+<h2>tard</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img267.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Apotheke</h2>
+<h2>pharmacie</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img268.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Jahr</h2>
+<h2>année</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img269.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>nächstes Jahr</h2>
+<h2>année prochaine</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img270.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>an mich</h2>
+<h2>à moi</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img271.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>an dich</h2>
+<h2>à toi</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img174.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Arbeitszimmer</h2>
+<h2>bureau de travail</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img272.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>parque</h2>
+<h2>parque</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img97.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Krankenhaus</h2>
+<h2>hôpital</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img273.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>zu neugierig</h2>
+<h2>trop curieux</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img229.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>neugierig</h2>
+<h2>curieux</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img274.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Lesezimmer</h2>
+<h2>salle de lecture</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img275.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Schlafzimmer</h2>
+<h2>chambre à coucher</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img276.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Badezimmer</h2>
+<h2>salle de bain</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img277.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Toilette</h2>
+<h2>toilettes</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img278.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>aber</h2>
+<h2>mais</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img279.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>du hast</h2>
+<h2>tu as</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img280.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>er/sie/es hat</h2>
+<h2>il/elle a</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img281.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>wir haben</h2>
+<h2>nous avons</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img282.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>ihr habt</h2>
+<h2>vous avez</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img77.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>sie haben</h2>
+<h2>ils ont</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img285.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>wie alt bist du?</h2>
+<h2>quel âge as-tu?</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img283.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>wie alt bist du</h2>
+<h2>quel âge as-tu</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img284.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>mein Buch</h2>
+<h2>mon livre</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img286.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>dein Buch</h2>
+<h2>ton livre</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img287.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>sein Buch</h2>
+<h2>son livre</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img288.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Parkplatz</h2>
+<h2>parking</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img289.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>weit</h2>
+<h2>loin</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img290.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Autobahn</h2>
+<h2>autoroute</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img295.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Paradies</h2>
+<h2>paradis</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img291.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>nett</h2>
+<h2>gentil</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img292.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>breit</h2>
+<h2>large</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img293.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Mondlicht</h2>
+<h2>clair de lune</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img3.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Geld</h2>
+<h2>argent</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img294.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>schmutzig</h2>
+<h2>salé</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img296.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Fluss</h2>
+<h2>rivière</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img297.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Uganda</h2>
+<h2>Ouganda</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img298.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Ohr</h2>
+<h2>oreille</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img299.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Teekanne</h2>
+<h2>théillière</h2>
+</div>
+</div>
+</div>
+</body>
+</html>

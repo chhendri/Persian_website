@@ -1,0 +1,782 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>listWords</title>
+<style>
+  h1 {
+    color: #274c77;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:50px;
+    margin-bottom:40px;
+  }
+
+  h2 {
+    color: #274c77;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+
+  button {
+    color: #274c77;
+    background-color: #e7ecef;
+    font-size: 19px;
+    border: 1px solid #8b8c89;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin-top:50px;
+    margin-right:10px;
+  }
+
+  button:hover {
+    color: #e7ecef;
+    background-color: #274c77;
+  }
+
+  .text-box {
+    background-color: #e7ecef;
+    border-radius: 20px;
+    margin: 2em auto;
+    padding: 20px;
+    width: 90%;
+  }
+
+    hr {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .container {
+    background-color: #e7ecef;
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+    padding: 1em;
+
+  }
+
+  #survey-form {
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    vertical-align: top;
+    margin-top: 20px;
+  }
+
+  .input-tab {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin-left: 10px;
+  }
+
+  .input-field {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    margin: 18px 0 0 10px;
+    border: 1px solid #8b8c89;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  ::-webkit-input-placeholder {
+     font-style: italic;
+    font-weight: 300;
+  }
+
+  input {
+    margin: 7px;
+  }
+
+  #dropdown {
+    width: 100%;
+    padding: 5px;
+    margin: 20px 0 10px 10px;
+    border: 1px solid #8b8c89;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 15px;
+  }
+
+</style>
+</head>
+<header>
+  <div class="text-box">
+    <h1>Train your vocabulary</h1>
+    <h2>For each word, enter the correct translation and click on submit to get the correction.</h2>
+  </div>
+</header>
+<body>
+  <div class="container">
+      <form id="survey-form" action="/wordTrainLecturePost" method="POST">
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>grève</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_640' name='response_640' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>rose</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_641' name='response_641' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>autoroute</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_642' name='response_642' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>calme</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_643' name='response_643' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>ici</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_644' name='response_644' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>rire</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_645' name='response_645' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>glaçon</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_646' name='response_646' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>gentilesse</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_647' name='response_647' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>monde</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_648' name='response_648' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>repas du soir</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_649' name='response_649' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>écouter</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_650' name='response_650' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>tard</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_651' name='response_651' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>proche</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_652' name='response_652' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>pharmacie</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_653' name='response_653' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>maintenant</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_654' name='response_654' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>habitant</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_655' name='response_655' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>employé entreprise</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_656' name='response_656' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>mais</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_657' name='response_657' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>embassade</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_658' name='response_658' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>actrice</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_659' name='response_659' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>pourquoi</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_660' name='response_660' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>vite</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_661' name='response_661' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>dormir</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_662' name='response_662' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>laver les mains</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_663' name='response_663' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>court</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_664' name='response_664' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>jardin</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_665' name='response_665' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>poumon</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_666' name='response_666' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>année</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_667' name='response_667' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>cette année</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_668' name='response_668' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>année passée</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_669' name='response_669' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>année prochaine</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_670' name='response_670' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>demande</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_671' name='response_671' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>exemple</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_672' name='response_672' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>à moi</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_673' name='response_673' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>à toi</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_674' name='response_674' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>lieu de travail</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_675' name='response_675' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>bureau de travail</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_676' name='response_676' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>parque</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_677' name='response_677' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>lieu</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_678' name='response_678' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>quartier</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_679' name='response_679' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>hôpital</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_680' name='response_680' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>trop curieux</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_681' name='response_681' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>curieux</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_682' name='response_682' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>comment</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_683' name='response_683' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>cuisine</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_684' name='response_684' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>bibliothèque</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_685' name='response_685' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>salle de lecture</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_686' name='response_686' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>chambre à coucher</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_687' name='response_687' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>salle de bain</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_688' name='response_688' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>toilettes</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_689' name='response_689' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>salon</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_690' name='response_690' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>mais</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_691' name='response_691' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>j ai</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_692' name='response_692' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>tu as</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_693' name='response_693' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>il/elle a</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_694' name='response_694' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>nous avons</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_695' name='response_695' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>vous avez</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_696' name='response_696' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>ils ont</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_697' name='response_697' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>quel âge as-tu?</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_698' name='response_698' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>quel âge as-tu</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_699' name='response_699' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>mon livre</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_700' name='response_700' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>ton livre</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_701' name='response_701' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>son livre</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_702' name='response_702' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>notre livre</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_703' name='response_703' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>votre livre</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_704' name='response_704' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>leur livre</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_705' name='response_705' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>parking</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_706' name='response_706' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>dortoir</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_707' name='response_707' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>loin</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_708' name='response_708' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>camarade de klasse</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_709' name='response_709' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>c est juste</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_710' name='response_710' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>pot de fleurs</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_711' name='response_711' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>chemin/route</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_712' name='response_712' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>lune/mois</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_713' name='response_713' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>autoroute</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_714' name='response_714' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>tombe/cimetière</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_715' name='response_715' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>oiseau</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_716' name='response_716' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>chant oiseau</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_717' name='response_717' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>sourire</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_718' name='response_718' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>frigo</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_719' name='response_719' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>paradis</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_720' name='response_720' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>gentil</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_721' name='response_721' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>large</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_722' name='response_722' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>magasine</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_723' name='response_723' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>monde</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_724' name='response_724' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>clair de lune</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_725' name='response_725' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>visage</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_726' name='response_726' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>là</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_727' name='response_727' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>repas du midi</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_728' name='response_728' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>argent</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_729' name='response_729' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>bénéfice</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_730' name='response_730' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>salé</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_731' name='response_731' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>rivière</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_732' name='response_732' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>Ouganda</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_733' name='response_733' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>oreille</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_734' name='response_734' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>théillière</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_735' name='response_735' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>four</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_736' name='response_736' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>manque</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_737' name='response_737' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>tôt</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_738' name='response_738' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>lumière</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_739' name='response_739' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>loin</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_740' name='response_740' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>couverture</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_741' name='response_741' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>odeur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_742' name='response_742' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>médicament</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_743' name='response_743' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>aiguille</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_744' name='response_744' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>brûlant</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_745' name='response_745' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>vache</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_746' name='response_746' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>bain</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_747' name='response_747' placeholder='Enter your response' autofocus>
+</div>
+<div class='btn'>
+<button id='submit' type='submit' name='submit' value='submit'>Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>

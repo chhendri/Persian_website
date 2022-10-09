@@ -1,0 +1,51 @@
+directeur,modir,مدیر
+commercial,tejani,تجاری
+inspecteur,bazras,بازرس
+impôts,maliati,مالیاتی
+géomètre,nache bandar,نقشه بردار
+expert,korchenas,کارشناس
+guide,rahnama,راهنما
+musée,mousé,موزه
+infirmière,parastar,پرستار
+ingénieur,mohandes,مهندس
+civil,chahr sazi,شهر سازی
+métier,choql,شقل
+art,honar,هنر
+pensionné,baz néchasté,باز نشسته
+fonctionnaire,karmand,کارمند
+programmeur,barnamériz,برنامهریز
+traducteur,motargem,مترحم
+époux,hamsar,همسر
+bibliothéquaire,kétabdâr,کتاب دار
+peintre,naghash,نقّاش
+enseignant,mohalem,معلّم
+coiffeur,arayeschgour,آرایشگر
+facteur,postchi,پست چی
+police,polis,پلیس
+cuisinier,âchpaz,آشپز
+couturier,chaiat,خیاط
+chauffeur,rananda,راننده
+pilote,xalaban,خلبان
+intéressant,ché jaleb,چو جالب
+pompier,atach nechan,آتش نشان
+chimiste,chimidan,شیمی دان
+astronaute,faza navard,فغا نورد
+politicien,sia satmadar,سیا ستمدار
+politique,siasat,سیاست
+vétérinaire,dam pezechk,دامپزشک
+animaux,keyvan,حیوان
+acteur,pazigar,پازگر
+bourgemestre,chahrdar,شهردار
+foutballeur,footballiste,قوتبالیست
+pyschologue,ravan chenas,روانشناس
+psychiatre,ravan pezechk,روانپزشک
+agriculteur,kechavaraz,کشاورز
+musicien,navazande,نوازنده
+dent,dandan,دندان
+dentiste,dandan pezechk,دندان پزشک
+capitaine de bâteaux,nachada,ناخدا
+bâteau,kechti,کشتی
+profession,chékaré,چه کاره
+boulanger,nânva,نانوا
+yeux,chechm,چشم
+ophtalmologue,chechm pezechk,چشم پزشک

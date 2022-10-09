@@ -1,0 +1,440 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>listWords</title>
+<style>
+  h1 {
+    color: #274c77;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:50px;
+    margin-bottom:40px;
+  }
+
+  h2 {
+    color: #274c77;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+
+  button {
+    color: #274c77;
+    background-color: #e7ecef;
+    font-size: 19px;
+    border: 1px solid #8b8c89;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin-top:50px;
+    margin-right:10px;
+  }
+
+  button:hover {
+    color: #e7ecef;
+    background-color: #274c77;
+  }
+
+  .text-box {
+    background-color: #e7ecef;
+    border-radius: 20px;
+    margin: 2em auto;
+    padding: 20px;
+    width: 90%;
+  }
+
+    hr {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .container {
+    background-color: #e7ecef;
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+    padding: 1em;
+
+  }
+
+  #survey-form {
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    vertical-align: top;
+    margin-top: 20px;
+  }
+
+  .input-tab {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin-left: 10px;
+  }
+
+  .input-field {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    margin: 18px 0 0 10px;
+    border: 1px solid #8b8c89;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  ::-webkit-input-placeholder {
+     font-style: italic;
+    font-weight: 300;
+  }
+
+  input {
+    margin: 7px;
+  }
+
+  #dropdown {
+    width: 100%;
+    padding: 5px;
+    margin: 20px 0 10px 10px;
+    border: 1px solid #8b8c89;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 15px;
+  }
+
+</style>
+</head>
+<header>
+  <div class="text-box">
+    <h1>Train your vocabulary</h1>
+    <h2>For each word, enter the correct translation and click on submit to get the correction.</h2>
+  </div>
+</header>
+<body>
+  <div class="container">
+      <form id="survey-form" action="/wordTrainLecturePost" method="POST">
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>directeur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_405' name='response_405' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>commercial</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_406' name='response_406' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>inspecteur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_407' name='response_407' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>impôts</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_408' name='response_408' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>géomètre</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_409' name='response_409' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>expert</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_410' name='response_410' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>guide</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_411' name='response_411' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>musée</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_412' name='response_412' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>infirmière</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_413' name='response_413' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>ingénieur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_414' name='response_414' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>civil</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_415' name='response_415' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>métier</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_416' name='response_416' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>art</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_417' name='response_417' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>pensionné</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_418' name='response_418' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>fonctionnaire</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_419' name='response_419' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>programmeur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_420' name='response_420' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>traducteur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_421' name='response_421' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>époux</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_422' name='response_422' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>bibliothéquaire</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_423' name='response_423' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>peintre</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_424' name='response_424' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>enseignant</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_425' name='response_425' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>coiffeur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_426' name='response_426' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>facteur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_427' name='response_427' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>police</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_428' name='response_428' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>cuisinier</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_429' name='response_429' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>couturier</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_430' name='response_430' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>chauffeur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_431' name='response_431' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>pilote</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_432' name='response_432' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>intéressant</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_433' name='response_433' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>pompier</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_434' name='response_434' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>chimiste</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_435' name='response_435' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>astronaute</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_436' name='response_436' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>politicien</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_437' name='response_437' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>politique</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_438' name='response_438' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>vétérinaire</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_439' name='response_439' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>animaux</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_440' name='response_440' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>acteur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_441' name='response_441' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>bourgemestre</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_442' name='response_442' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>foutballeur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_443' name='response_443' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>pyschologue</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_444' name='response_444' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>psychiatre</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_445' name='response_445' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>agriculteur</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_446' name='response_446' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>musicien</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_447' name='response_447' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>dent</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_448' name='response_448' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>dentiste</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_449' name='response_449' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>capitaine de bâteaux</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_450' name='response_450' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>bâteau</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_451' name='response_451' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>profession</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_452' name='response_452' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>boulanger</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_453' name='response_453' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>yeux</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_454' name='response_454' placeholder='Enter your response' autofocus>
+</div>
+<div class='labels'>
+<label id='name-label' for='word_to_translate'>ophtalmologue</label>
+</div>
+<div class='input-tab'>
+<input class='input-field' type='text' id='response_455' name='response_455' placeholder='Enter your response' autofocus>
+</div>
+<div class='btn'>
+<button id='submit' type='submit' name='submit' value='submit'>Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>

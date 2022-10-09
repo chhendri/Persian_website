@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {
+  color: #274c77;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:50px;
+  margin-bottom:40px;
+}
+h2 {
+  color: #274c77;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  color: #274c77;
+  background-color: #e7ecef;
+  font-size: 19px;
+  border: 1px solid #8b8c89;
+  padding: 15px 50px;
+  cursor: pointer;
+  margin-top:50px;
+  margin-right:10px;
+}
+button:hover {
+  color: #e7ecef;
+  background-color: #274c77;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 20px;
+  overflow: hidden;
+  float:left;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #e7ecef;
+  color: white;
+  transform: rotateY(180deg);
+  border: 3px solid #274c77;
+}
+
+body {
+  background-color:#e7ecef;
+}
+</style>
+</head>
+<body>
+
+<h1>Learn vocabulary with images</h1>
+<h2>Hover over the image to get the persian and english word</h2>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img12.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Inde</h2>
+<h2>Indien</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img13.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Pologne</h2>
+<h2>Polen</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img14.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Chine</h2>
+<h2>China</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img15.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Corée</h2>
+<h2>Korea</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img16.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Turquie</h2>
+<h2>Türkei</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img17.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Russie</h2>
+<h2>Russland</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img18.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Amérique</h2>
+<h2>Amerika</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img19.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Malésie</h2>
+<h2>Malaysia</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img20.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Iraq</h2>
+<h2>Irak</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img21.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Nigéria</h2>
+<h2>Nigeria</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img22.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Tadjikistan</h2>
+<h2>Tadschikistan</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img23.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Syrie</h2>
+<h2>Syrien</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img24.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Italie</h2>
+<h2>Italien</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img25.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>France</h2>
+<h2>Frankreich</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img26.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Canada</h2>
+<h2>Kanada</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img27.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Ghana</h2>
+<h2>Ghana</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img28.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Allemagne</h2>
+<h2>Deutschland</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img29.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Bengladesh</h2>
+<h2>Bengladesh</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img30.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Yemen</h2>
+<h2>Jemen</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img31.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Vietnam</h2>
+<h2>Vietnam</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img32.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>étudiant</h2>
+<h2>Student</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img33.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>professeur (université)</h2>
+<h2>Professor (Universität)</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img34.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>médecin</h2>
+<h2>Arzt</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img35.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>avocat</h2>
+<h2>Anwalt</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img209.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>triste</h2>
+<h2>traurig</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img36.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>classe</h2>
+<h2>Klasse</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img38.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>cheval</h2>
+<h2>Pferd</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img39.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>plume</h2>
+<h2>Feder</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img40.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>panier</h2>
+<h2>Korb</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img41.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>sucre</h2>
+<h2>süß</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img42.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>rouge</h2>
+<h2>rot</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img43.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>radis</h2>
+<h2>Radieschen</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img149.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>pays</h2>
+<h2>Land</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img66.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Malésie</h2>
+<h2>Malaysia</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img67.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>malésien</h2>
+<h2>malaysisch</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img68.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Iraq</h2>
+<h2>Irak</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img69.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>iraqien</h2>
+<h2>irakisch</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img70.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>italien</h2>
+<h2>italienisch</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img71.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>France</h2>
+<h2>Frankreich</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img72.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Iran</h2>
+<h2>Iran</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img73.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>ghanien</h2>
+<h2>ghanaisch</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img74.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Allemagne</h2>
+<h2>Deutschland</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img75.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>allemand</h2>
+<h2>Deutsch</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img76.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>bengladais</h2>
+<h2>Bengladisch</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img11.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Yemen</h2>
+<h2>Jemen</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img78.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>Vietnam</h2>
+<h2>Vietnam</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img80.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>ne suis pas</h2>
+<h2>nicht</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img81.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>non</h2>
+<h2>nicht</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img82.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>étudiant</h2>
+<h2>Student</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img83.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>médecin</h2>
+<h2>Arzt</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img84.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>avocat</h2>
+<h2>Anwalt</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img85.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>triste</h2>
+<h2>traurig</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img86.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>classe</h2>
+<h2>Klasse</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img87.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>grossier</h2>
+<h2>grob</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img83.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>rempli</h2>
+<h2>gefüllt</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img50.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>rouge</h2>
+<h2>rot</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img88.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>plomb</h2>
+<h2>Blei</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img89.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>radis</h2>
+<h2>Radieschen</h2>
+</div>
+</div>
+</div>
+</body>
+</html>

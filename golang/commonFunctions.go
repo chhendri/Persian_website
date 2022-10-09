@@ -5,10 +5,11 @@ import (
   "log"
   "io/ioutil"
   "strconv"
+  "fmt"
 )
 
 
-func constr_htmlWordlist (headerFileName string) (){
+func constr_htmlLectures (headerFileName string) (){
   // Construct the html file for listWords
 
   var htmlString string
@@ -40,6 +41,21 @@ func constr_htmlWordlist (headerFileName string) (){
 }
 
 
+func constr_htmlWordList () {
+  // Find the number of lectures in the database
+  n_lectures, err := numberLectures()
+  fmt.Println(err)
+  for _ , i := range n_lectures {
+      id := strconv.Itoa(i.ID)
+      tableVocabulary(wordsByLecture(id, "french", "farsi"), id, "french", "farsi")
+      tableVocabulary(wordsByLecture(id, "german", "farsi"), id, "german", "farsi")
+      tableVocabulary(wordsByLecture(id, "french", "german"), id, "french", "german")
+      tableVocabulary(wordsByLecture(id, "german", "french"), id, "german", "french")
+      tableVocabulary(wordsByLecture(id, "farsi", "french"), id, "farsi", "french")
+      tableVocabulary(wordsByLecture(id, "farsi", "german"), id, "farsi", "german")
+  }
+}
+
 
 func createHtmlImages_allLectures() {
   var leid string
@@ -49,14 +65,37 @@ func createHtmlImages_allLectures() {
   }
   for _ , i := range n_lectures {
     leid = strconv.Itoa(i.ID)
-    createHtmlImages("imageTrainerLecture", leid)
+    createHtmlImages("imageTrainerLecture", leid, "french", "farsi")
+    createHtmlImages("imageTrainerLecture", leid, "french", "german")
+    createHtmlImages("imageTrainerLecture", leid, "farsi", "french")
+    createHtmlImages("imageTrainerLecture", leid, "farsi", "german")
+    createHtmlImages("imageTrainerLecture", leid, "german", "farsi")
+    createHtmlImages("imageTrainerLecture", leid, "german", "french")
   }
 }
 
 
-func createHtmlImages (headerFileName string, leid string) {
+func createHtmlWordTrain_allLectures() {
+  var leid string
+  n_lectures, err := numberLectures()
+  if err != nil {
+    log.Fatal(err)
+  }
+  for _ , i := range n_lectures {
+    leid = strconv.Itoa(i.ID)
+    constrHtmlWordTrainLecture("wordTrainerLecture", leid, "french", "farsi")
+    constrHtmlWordTrainLecture("wordTrainerLecture", leid, "french", "german")
+    constrHtmlWordTrainLecture("wordTrainerLecture", leid, "farsi", "french")
+    constrHtmlWordTrainLecture("wordTrainerLecture", leid, "farsi", "german")
+    constrHtmlWordTrainLecture("wordTrainerLecture", leid, "german", "farsi")
+    constrHtmlWordTrainLecture("wordTrainerLecture", leid, "german", "french")
+  }
+}
+
+
+func createHtmlImages (headerFileName string, leid string, Language_user string, Language_to_learn string) {
   // Find the words, translations and image paths
-  wordsImgs, err := getWordsImages(leid)
+  wordsImgs, err := getWordsImages(leid, Language_user, Language_to_learn)
   // Construct the html file for listWords
   var htmlString string
   // Read the header file
@@ -69,7 +108,7 @@ func createHtmlImages (headerFileName string, leid string) {
   // Add a button for each lecture
   for _ , i := range wordsImgs {
     htmlString += "<div class='flip-box'>\n<div class='flip-box-inner'>\n<div class='flip-box-front'>\n"
-    htmlString += "<img src='../Data/images/" + i.Img_path + ".jpeg' style='width:300px;height:200px'>\n"
+    htmlString += "<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/" + i.Img_path + ".jpeg' style='width:300px;height:200px'>\n"
     htmlString += "</div>\n<div class='flip-box-back'>\n"
     htmlString += "<h2>" + i.Pers + "</h2>\n"
     htmlString += "<h2>" + i.Trans + "</h2>\n"
@@ -79,8 +118,84 @@ func createHtmlImages (headerFileName string, leid string) {
   htmlString += "</body>\n</html>"
 
   // Save to file
-  htmlFile := headerFileName + "_" + leid + ".html"
-  if err := ioutil.WriteFile("html_files/" + htmlFile, []byte(htmlString), 0666); err != nil {
+  htmlFile := headerFileName + "_" + leid + "_" + Language_user + "_" + Language_to_learn + ".html"
+  if err := ioutil.WriteFile("html_files/" + Language_user + "/" + htmlFile, []byte(htmlString), 0666); err != nil {
     log.Fatal(err)
   }
+}
+
+
+func constrHtmlWordTrainLecture (headerFileName string, leid string, user_language string, to_learn_language string) {
+  // Find the words and translations
+  wordsLect := wordsByLecture(leid, user_language, to_learn_language)
+
+  // Construct the html file for listWords
+  var htmlString string
+  // Read the header file
+  htmlHeaderFile := headerFileName + "_header.html"
+  header, err := ioutil.ReadFile("html_files/" + htmlHeaderFile)
+  if err != nil {
+      log.Fatal(err)
+  }
+  htmlString += string(header)
+
+  for _ , i := range wordsLect {
+    htmlString += "<div class='labels'>\n"
+    htmlString += "<label id='name-label' for='word_to_translate'>" + i.Fran + "</label>\n"
+    htmlString += "</div>\n"
+    htmlString += "<div class='input-tab'>\n"
+    htmlString += "<input class='input-field' type='text' id='response_" + strconv.Itoa(i.Woid) + "' name='response_" + strconv.Itoa(i.Woid) + "' placeholder='Enter your response' autofocus>\n"
+    htmlString += "</div>\n"
+  }
+
+  // Add the footer
+  htmlString += "<div class='btn'>\n<button id='submit' type='submit' name='submit' value='submit'>Submit</button>\n</div>\n"
+  htmlString += "</form>\n</div>\n</body>\n</html>\n"
+
+  // Save to file
+  htmlFile := headerFileName + "_" + leid + "_" + user_language + "_" + to_learn_language + ".html"
+  if err := ioutil.WriteFile("html_files/" + user_language + "/" + htmlFile, []byte(htmlString), 0666); err != nil {
+    log.Fatal(err)
+  }
+}
+
+
+func constrHtmlWordTrainLectureCorrection (headerFileName string, leid string, user_language string, to_learn_language string, corrList []correctionWords) (htmlFile string){
+
+  // Construct the html file for listWords
+  var htmlString string
+
+  // Read the header file
+  htmlHeaderFile := headerFileName + "_header.html"
+  header, err := ioutil.ReadFile("html_files/" + htmlHeaderFile)
+  if err != nil {
+      log.Fatal(err)
+  }
+  htmlString += string(header)
+
+  for _ , i := range corrList {
+    // Put it in the format
+    //htmlString += "<div class='labels'>\n"
+    //htmlString += "</div>\n"
+    htmlString += "<div class='input-tab'>\n"
+    htmlString += "<label class='column-3 left' id='name-label' for='word_to_translate'>" + i.QueryWord + "</label>\n"
+    if i.UserWord == i.CorrectWord {
+      htmlString += "<label class='column-3 center green' ' id='response_" + strconv.Itoa(i.Woid) + "' name='response_" + strconv.Itoa(i.Woid) + "'>" + i.UserWord + "</label>\n"
+    } else {
+      htmlString += "<label class='column-3 center red' id='response_" + strconv.Itoa(i.Woid) + "' name='response_" + strconv.Itoa(i.Woid) + "'>" + i.UserWord + "</label>\n"
+    }
+    htmlString += "<label class='column-3 right' id='correct_" + strconv.Itoa(i.Woid) + "' name='correct_" + strconv.Itoa(i.Woid) + "'>" + i.CorrectWord + "</label>\n"
+    htmlString += "</div>\n"
+  }
+
+  // Add the footer
+  htmlString += "</form>\n</div>\n</body>\n</html>\n"
+
+  // Save to file
+  htmlFile = headerFileName + "_" + leid + "_" + user_language + "_" + to_learn_language + ".html"
+  if err := ioutil.WriteFile("html_files/" + user_language + "/" + htmlFile, []byte(htmlString), 0666); err != nil {
+    log.Fatal(err)
+  }
+
+  return htmlFile
 }

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {
+  color: #274c77;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:50px;
+  margin-bottom:40px;
+}
+h2 {
+  color: #274c77;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  color: #274c77;
+  background-color: #e7ecef;
+  font-size: 19px;
+  border: 1px solid #8b8c89;
+  padding: 15px 50px;
+  cursor: pointer;
+  margin-top:50px;
+  margin-right:10px;
+}
+button:hover {
+  color: #e7ecef;
+  background-color: #274c77;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 20px;
+  overflow: hidden;
+  float:left;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #e7ecef;
+  color: white;
+  transform: rotateY(180deg);
+  border: 3px solid #274c77;
+}
+
+body {
+  background-color:#e7ecef;
+}
+</style>
+</head>
+<body>
+
+<h1>Learn vocabulary with images</h1>
+<h2>Hover over the image to get the persian and english word</h2>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img136.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>آزار دادان</h2>
+<h2>belästigen</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img137.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>رازدار</h2>
+<h2>vertrauenswürdig</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img138.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>نام</h2>
+<h2>Name</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img139.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>بالا</h2>
+<h2>hoch</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img140.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>بال</h2>
+<h2>Flügel</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img98.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>درّه</h2>
+<h2>Tal</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img99.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>تپّه</h2>
+<h2>Hügel</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img100.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>پنجره</h2>
+<h2>Fenster</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img101.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>ژاله</h2>
+<h2>Hagel</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img102.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>دقیقه</h2>
+<h2>Minute</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img103.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>ده</h2>
+<h2>zehn</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img104.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>دانشگاه</h2>
+<h2>Universität</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img105.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>روز</h2>
+<h2>Tag</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img106.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>رود خانه</h2>
+<h2>Fluss</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img107.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>امروز</h2>
+<h2>heute</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img108.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>دیروز</h2>
+<h2>gestern</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img109.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>پریروز</h2>
+<h2>vorgestern</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img168.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>آنگور</h2>
+<h2>Trauben</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img110.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>دو</h2>
+<h2>zwei</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img111.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>نقره</h2>
+<h2>Silber (Metall)</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img112.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>برو</h2>
+<h2>pars (Imperativ)</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img113.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>شوهر</h2>
+<h2>Ehemann</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img114.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>توان</h2>
+<h2>Macht</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img115.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>دیوار</h2>
+<h2>Mauer</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img116.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>جواهر</h2>
+<h2>Schmuck</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img121.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>قهوه</h2>
+<h2>Kaffee</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img122.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>میوه</h2>
+<h2>Frucht</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/img93.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>خواستن</h2>
+<h2>wollen</h2>
+</div>
+</div>
+</div>
+</body>
+</html>

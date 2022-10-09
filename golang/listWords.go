@@ -4,7 +4,7 @@ import (
   "net/http"
   "fmt"
   "log"
-  "github.com/gin-gonic/gin"
+  //"github.com/gin-gonic/gin"
   "io/ioutil"
   "html/template"
 )
@@ -27,7 +27,7 @@ func listWordsGet(w http.ResponseWriter, r *http.Request)  {
   // Main function to display the listWords page
   tmpl := template.Must(template.ParseFiles("html_files/listWords.html"))
   tmpl.Execute(w, nil)
-  }
+}
 
 
 func listWordsPost(w http.ResponseWriter, r *http.Request){
@@ -36,22 +36,21 @@ func listWordsPost(w http.ResponseWriter, r *http.Request){
   for key := range r.PostForm {
     buttonVal.Val = key
   }
-  http.Redirect(w, r, "/imageTrain/" + buttonVal.Val, http.StatusFound)
+  http.Redirect(w, r, r.URL.Path + "/" + buttonVal.Val, http.StatusFound)
 }
 
 
-func lectureHandler(leid string) http.HandlerFunc {
+func lectureHandler(leid string, user_language string, to_learn_language string) http.HandlerFunc {
   // Function to display the vocabulary of a lecture
     return func(w http.ResponseWriter, r *http.Request) {
-      tmpl_lec := template.Must(template.ParseFiles("html_files/Lecture" + leid + ".html"))
+      tmpl_lec := template.Must(template.ParseFiles("html_files/" + user_language+ "/Lecture" + leid + "_" + user_language + "_" + to_learn_language + ".html"))
       tmpl_lec.Execute(w, nil)
     }
 }
 
 
-func tableVocabulary(jsonObj []Word, lecture_id string) (fileName string){
+func tableVocabulary(jsonObj []Word, lecture_id string, user_language string, to_learn_language string) (fileName string){
   // Turn a JSON into an HTML file with header
-
   var htmlString string
 
   htmlString += "<!Doctype html>\n<html>\n<head>\n<meta charset='utf-8'>\n<title>listWords</title>\n</head>\n<body style='background-color:#e7ecef;'>\n"
@@ -59,20 +58,20 @@ func tableVocabulary(jsonObj []Word, lecture_id string) (fileName string){
   header := "<h1>Vocabulary of Lecture " + lecture_id + "</h1><table> \n"
   // Set the header
   htmlString += header
+
   // Add the rows of the table corresponding to an instance of the JSON
   for _ , i := range jsonObj {
     htmlString += "<tr> \n"
     htmlString += "<td>" + string(i.Fran) + "</td> \n"
-    htmlString += "<td>" + string(i.Tran) + "</td> \n"
     htmlString += "<td>" + string(i.Pers) + "</td> \n"
     htmlString += "</tr> \n"
   }
   // Add the footer
   htmlString += "</table>\n</body>\n</html>"
   // Define the filename
-  fileName += "Lecture" + lecture_id + ".html"
+  fileName += "Lecture" + lecture_id + "_" + user_language + "_" + to_learn_language + ".html"
   // Save to file
-  if err := ioutil.WriteFile("html_files/" + fileName, []byte(htmlString), 0666); err != nil {
+  if err := ioutil.WriteFile("html_files/" + user_language+ "/" + fileName, []byte(htmlString), 0666); err != nil {
     log.Fatal(err)
   }
 
@@ -80,46 +79,48 @@ func tableVocabulary(jsonObj []Word, lecture_id string) (fileName string){
 }
 
 
-func getwordsByLecture(c *gin.Context) {
-    // Get the lecture ID
-    lecture_id := c.Param("id")
-    // Get the words for that lecture from the database
-    words, err := wordsByLecture(lecture_id)
-    if err != nil {
-        log.Fatal(err)
-    }
-
-    // Convert the JSON to a table
-    tableVocabulary(words, lecture_id)
-    //
-    c.IndentedJSON(http.StatusOK, words)
-}
-
-
-func wordsByLecture(lecture string) ([]Word, error) {
+func wordsByLecture(lecture string, user_language string, to_learn_language string) ([]Word) {
     // Get all the words for a lecture
     var words []Word
+    // String giving the Query
+    var query string
 
-    // Query the database
-    rows, err := db.Query("SELECT woid, fran, tran, pers, leid, imag FROM Words WHERE leid = ?", lecture)
+    // Query the database according to the scenario
+    query = buildQueryWordList(user_language, to_learn_language)
+    rows, err := db.Query(query, lecture)
     if err != nil {
-        return nil, fmt.Errorf("wordsByLecture %q: %v", lecture, err)
+        return nil
     }
 
     defer rows.Close()
     // Loop through rows, using Scan to assign column data to struct fields.
     for rows.Next() {
         var wor Word
-        if err := rows.Scan(&wor.Woid, &wor.Fran, &wor.Tran, &wor.Pers, &wor.Leid, &wor.Imag); err != nil {
-            return nil, fmt.Errorf("wordsByLecture %q: %v", lecture, err)
+        if err := rows.Scan(&wor.Woid, &wor.Fran, &wor.Pers, &wor.Leid, &wor.Imag); err != nil {
+            return nil
         }
         words = append(words, wor)
     }
-    if err := rows.Err(); err != nil {
-        return nil, fmt.Errorf("wordsByLecture %q: %v", lecture, err)
-    }
 
-    return words, nil
+    return words
+}
+
+
+func buildQueryWordList(user_language string, to_learn_language string) (query string) {
+  if user_language == "french" && to_learn_language == "farsi" {
+    query = "SELECT woid, fran, pers, leid, imag FROM Words WHERE leid = ?"
+  } else if user_language == "french" && to_learn_language == "german" {
+    query = "SELECT woid, fran, germ, leid, imag FROM Words WHERE leid = ?"
+  } else if user_language == "german" && to_learn_language == "french" {
+    query = "SELECT woid, germ, fran, leid, imag FROM Words WHERE leid = ?"
+  } else if user_language == "german" && to_learn_language == "farsi" {
+    query = "SELECT woid, germ, pers, leid, imag FROM Words WHERE leid = ?"
+  } else if user_language == "farsi" && to_learn_language == "french" {
+    query = "SELECT woid, pers, fran, leid, imag FROM Words WHERE leid = ?"
+  } else if user_language == "farsi" && to_learn_language == "german" {
+    query = "SELECT woid, pers, germ, leid, imag FROM Words WHERE leid = ?"
+  }
+  return query
 }
 
 

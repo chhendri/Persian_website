@@ -1,0 +1,14 @@
+.idea
+pycache
+pkg
+venv
+Data/Fran_words_module1.txt
+Data/Germ_words_module1.txt
+Data/add_german.sql
+Persian_website
+go.mod
+go.sum
+persian_public
+package-lock.json
+src
+
