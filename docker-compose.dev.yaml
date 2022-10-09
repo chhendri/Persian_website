@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  go:
+    build:
+      dockerfile: docker/golang/Dockerfile
+      context: .
+    ports:
+      - 127.0.0.1:8000:8000
+    env_file:
+      - .env
+    depends_on:
+      - mysql
+    restart: unless-stopped
+  mysql:
+    build:
+      dockerfile: docker/mysql/Dockerfile
+      context: .
+    env_file:
+      - .env
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:3306:3306
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
