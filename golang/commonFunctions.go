@@ -108,7 +108,7 @@ func createHtmlImages (headerFileName string, leid string, Language_user string,
   // Add a button for each lecture
   for _ , i := range wordsImgs {
     htmlString += "<div class='flip-box'>\n<div class='flip-box-inner'>\n<div class='flip-box-front'>\n"
-    htmlString += "<img src='/home/charlotte/Bureau/Projects/Persian/golang/Data/images/" + i.Img_path + ".jpeg' style='width:300px;height:200px'>\n"
+    htmlString += "<img src='../../Data/images/" + i.Img_path + ".jpeg' style='width:300px;height:200px'>\n"
     htmlString += "</div>\n<div class='flip-box-back'>\n"
     htmlString += "<h2>" + i.Pers + "</h2>\n"
     htmlString += "<h2>" + i.Trans + "</h2>\n"

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {
+  color: #274c77;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:50px;
+  margin-bottom:40px;
+}
+h2 {
+  color: #274c77;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  color: #274c77;
+  background-color: #e7ecef;
+  font-size: 19px;
+  border: 1px solid #8b8c89;
+  padding: 15px 50px;
+  cursor: pointer;
+  margin-top:50px;
+  margin-right:10px;
+}
+button:hover {
+  color: #e7ecef;
+  background-color: #274c77;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 20px;
+  overflow: hidden;
+  float:left;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #e7ecef;
+  color: white;
+  transform: rotateY(180deg);
+  border: 3px solid #274c77;
+}
+
+body {
+  background-color:#e7ecef;
+}
+</style>
+</head>
+<body>
+
+<h1>Learn vocabulary with images</h1>
+<h2>Hover over the image to get the persian and english word</h2>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img301.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>صحبت کردن</h2>
+<h2>sprechen</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img302.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>طبقه</h2>
+<h2>Stockwerk</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img304.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>مطالعه کردن</h2>
+<h2>lesen/studieren</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img303.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>تماشا کردن</h2>
+<h2>schauen</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img305.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>صدا</h2>
+<h2>Stimme/Ton</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img306.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>وف</h2>
+<h2>bobo (Verletzung)</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img307.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>خواندن</h2>
+<h2>lesen</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img308.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>فنجان</h2>
+<h2>Tasse</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img309.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>آدرس</h2>
+<h2>Adresse</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img310.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>ورزشکار</h2>
+<h2>sportlich</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img311.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>گوش کردن</h2>
+<h2>hören</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img312.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>کودک</h2>
+<h2>Kind</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img313.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>کودکستن</h2>
+<h2>Kindertagesstätte</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img314.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>روز نامه</h2>
+<h2>Zeitung</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img315.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>آسباب بازی</h2>
+<h2>Spielzeug</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img300.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>ازدواج</h2>
+<h2>Hochzeit</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img316.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>هرف</h2>
+<h2>Brief</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img318.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>پرتقال</h2>
+<h2>orange</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img319.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>موز</h2>
+<h2>Banane</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img320.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>بیسکوییت</h2>
+<h2>Keks</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img317.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>بنفش</h2>
+<h2>violett</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img321.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>شیرینی فروشی</h2>
+<h2>Gebäck</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img322.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>کیک</h2>
+<h2>Kuchen</h2>
+</div>
+</div>
+</div>
+</body>
+</html>

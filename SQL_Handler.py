@@ -41,7 +41,7 @@ class Handle_data:
             new_id = last_id[0][0] + 1
         new_lst = [new_id, lst[0], lst[1], lst[2], lst[3]]
         # Create a new word
-        self.cursor.execute("INSERT INTO Words VALUES ('{}', '{}', '{}', '{}', '{}', 'N')".format(new_lst[0], new_lst[1], new_lst[2], new_lst[3], new_lst[4]))
+        self.cursor.execute("INSERT INTO Words VALUES ('{}', '{}', '{}', '{}', '{}', 'N', '')".format(new_lst[0], new_lst[1], new_lst[2], new_lst[3], new_lst[4]))
         self.conn.commit()
 
     def import_words(self, file):
@@ -100,7 +100,6 @@ class Handle_data:
         # Finds the lines matching that french word
         self.cursor.execute("SELECT * from Words where fran = '{}'".format(word))
         res = self.cursor.fetchall()
-        print(res)
         return res[0][0]
 
 
@@ -114,6 +113,7 @@ class Handle_data:
             for i in lines:
                 i = i.rstrip()
                 i = i.split(",")
+                print(woid)
                 woid = i[0]
                 # Check if image for the woid is already in table
                 self.cursor.execute("SELECT * from Images where WOID = '{}'".format(woid))
@@ -153,23 +153,28 @@ handler.add_lecture('9', '06/12/2021')
 handler.add_lecture('10', '13/12/2021')
 handler.add_lecture('11', '20/12/2021')
 
+handler.add_lecture('25', '03/10/2022')
 
-handler.import_words('Data/Lecture1_1.txt')
-handler.import_words('Data/Lecture1_2.txt')
-handler.import_words('Data/Lecture1_3.txt')
-handler.import_words('Data/Lecture1_4.txt')
-handler.import_words('Data/Lecture1_5.txt')
-handler.import_words('Data/Lecture1_6.txt')
-handler.import_words('Data/Lecture1_7.txt')
-handler.import_words('Data/Lecture1_8.txt')
-handler.import_words('Data/Lecture1_9.txt')
-handler.import_words('Data/Lecture1_10.txt')
-handler.import_words('Data/Lecture1_11.txt')
+
+handler.import_words('golang/Data/Lecture1_1.txt')
+handler.import_words('golang/Data/Lecture1_2.txt')
+handler.import_words('golang/Data/Lecture1_3.txt')
+handler.import_words('golang/Data/Lecture1_4.txt')
+handler.import_words('golang/Data/Lecture1_5.txt')
+handler.import_words('golang/Data/Lecture1_6.txt')
+handler.import_words('golang/Data/Lecture1_7.txt')
+handler.import_words('golang/Data/Lecture1_8.txt')
+handler.import_words('golang/Data/Lecture1_9.txt')
+handler.import_words('golang/Data/Lecture1_10.txt')
+handler.import_words('golang/Data/Lecture1_11.txt')
+
+handler.import_words('golang/Data/Lecture3_25.txt')
 """
 
 
-handler.import_images('/home/charlotte/Desktop/Projects/Persian/Data/images.txt')
-#handler.get_image(2)
+
+
+handler.import_images('/home/charlotte/Desktop/Projects/Persian/golang/Data/images.txt')
 
 """
 handler.get_id('perroquet')
