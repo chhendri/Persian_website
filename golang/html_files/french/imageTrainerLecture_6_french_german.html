@@ -79,52 +79,72 @@ body {
 body {
   background-color:#e7ecef;
 }
+.btn-home{
+  margin-left: 25px;
+}
 </style>
 </head>
+
+<div class="btn-home">
+<form action="/goHome" method="POST">
+  <button type="submit" class="btn btn-primary">Home</button>
+</form>
+</div>
 <body>
 
-<h1>Learn vocabulary with images</h1>
-<h2>Hover over the image to get the persian and english word</h2>
+<h1>{{ .Title }}</h1>
+<h2>{{ .SubTitle }}</h2>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img105.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img98.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Manager</h2>
-<h2>directeur</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img170.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>kommerziell</h2>
-<h2>commercial</h2>
+<h2></h2>
+<h2>guide</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img171.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img99.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Experte</h2>
-<h2>expert</h2>
+<h2></h2>
+<h2>musée</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img149.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img100.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Kunst</h2>
+<h2></h2>
+<h2>infirmière</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img101.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>ingénieur</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img102.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
 <h2>art</h2>
 </div>
 </div>
@@ -132,43 +152,87 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img172.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img103.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Rentner</h2>
-<h2>pensionné</h2>
+<h2></h2>
+<h2>programmeur</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img173.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img104.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Beamter</h2>
-<h2>fonctionnaire</h2>
+<h2></h2>
+<h2>bibliothéquaire</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img174.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img105.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Übersetzer</h2>
-<h2>traducteur</h2>
+<h2></h2>
+<h2>peintre</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img175.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img106.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Schneiderin</h2>
+<h2></h2>
+<h2>enseignant</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img107.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>coiffeur</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img108.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>facteur</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img109.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>police</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img168.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
 <h2>couturier</h2>
 </div>
 </div>
@@ -176,65 +240,10 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img176.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img110.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Fahrer</h2>
-<h2>chauffeur</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img177.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>Pilot</h2>
-<h2>pilote</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img178.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>interessant</h2>
-<h2>intéressant</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img179.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>Chemiker</h2>
-<h2>chimiste</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img180.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>Politiker</h2>
-<h2>politicien</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img120.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>Landwirt</h2>
+<h2></h2>
 <h2>agriculteur</h2>
 </div>
 </div>
@@ -242,10 +251,10 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img182.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img111.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Musiker</h2>
+<h2></h2>
 <h2>musicien</h2>
 </div>
 </div>
@@ -253,10 +262,10 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img183.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img112.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Zahn</h2>
+<h2></h2>
 <h2>dent</h2>
 </div>
 </div>
@@ -264,10 +273,10 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img184.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img113.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Zahnarzt</h2>
+<h2></h2>
 <h2>dentiste</h2>
 </div>
 </div>
@@ -275,10 +284,21 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img185.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img114.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Schiff</h2>
+<h2></h2>
+<h2>capitaine de bâteaux</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img115.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
 <h2>bâteau</h2>
 </div>
 </div>
@@ -286,21 +306,10 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img186.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img116.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Beruf</h2>
-<h2>profession</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img187.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>Bäcker</h2>
+<h2></h2>
 <h2>boulanger</h2>
 </div>
 </div>
@@ -308,10 +317,21 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img188.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img121.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Augenarzt</h2>
+<h2></h2>
+<h2>yeux</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img122.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
 <h2>ophtalmologue</h2>
 </div>
 </div>

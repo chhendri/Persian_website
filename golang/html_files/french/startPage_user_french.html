@@ -48,31 +48,40 @@
     height:50px;
     display:inline-block
   }
+  .btn-home{
+  	margin-left: 25px;
+  }
 </style>
 </head>
 
+<div class="btn-home">
+  <form action="/goHome" method="POST">
+    <button type="submit" class="btn btn-primary">Home</button>
+  </form>
+</div>
+
 <body>
-  <h1>Learn Persian</h1>
-  <h2>Learn Persian with this interactive site</h2>
+  <h1>Fancy Farsi</h1>
+  <h2>Apprenez le Persan avec ce site interactif</h2>
   <div_spacer></div_spacer>
 
   <p>
     <div align="center">
-      <h2> Choose the language you are confortable in </h2>
+      <h2> La langue que vous connaissez </h2>
       <form action="/chooseLanguageUser" method="POST">
-        <button type="submit" name="farsi" value="farsi">Farsi</button>
-        <selected_button type="submit" name="french" value="french">French</selected_button>
-        <button type="submit" name="german" value="german">German</button>
+        <button type="submit" name="farsi" value="farsi">Persan</button>
+        <selected_button type="submit" name="french" value="french">Français</selected_button>
+        <button type="submit" name="german" value="german">Allemand</button>
       </form>
     </div>
 
     <div_spacer></div_spacer>
 
     <div align="center">
-      <h2> Choose the language you want to learn </h2>
+      <h2> Choisissez la langue que vous voulez apprendre </h2>
       <form action="/chooseLanguageToLearn" method="POST">
-        <button type="submit" name="farsi" value="farsi">Farsi</button>
-        <button type="submit" name="german" value="german">German</button>
+        <button type="submit" name="farsi" value="farsi">Persan</button>
+        <button type="submit" name="german" value="german">Allemand</button>
       </form>
     </div>
 

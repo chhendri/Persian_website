@@ -126,14 +126,18 @@
   .center { float: left; margin: 0 5%; background-color: #e7ecef; }
   .right { background-color: #e7ecef; float: right; }
 
+  .home{
+  	margin-left: 25px;
+  }
 </style>
 </head>
+
+<div class="home">
+  <form action="/goHome" method="POST">
+    <button type="submit" class="button">Home</button>
+  </form>
+</div>
 <header>
   <div class="text-box">
-    <h1>Train your vocabulary</h1>
-    <h2>For each word, enter the correct translation and click on submit to get the correction.</h2>
-  </div>
-</header>
-<body>
-  <div class="container">
-    <form id='survey-form' action='/wordTrainLecturePost' method='POST'>
+    <h1>{{ .Title }}</h1>
+    <h2>{{ .SubTitle }}</h2>

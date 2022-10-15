@@ -79,27 +79,34 @@ body {
 body {
   background-color:#e7ecef;
 }
+.btn-home{
+  margin-left: 25px;
+}
 </style>
 </head>
-<body>
 
-<h1>Learn vocabulary with images</h1>
-<h2>Choose your lecture</h2>
+<div class="btn-home">
+<form action="/goHome" method="POST">
+  <button type="submit" class="btn btn-primary">Home</button>
+</form>
+</div>
+<body>
+<h1>{{ .Title }}</h1>
 <p>
 <div align='center'>
 <form method='POST'>
-<button type='submit' value='lecture1' name='lecture1'>Lecture 1</button>
-<button type='submit' value='lecture2' name='lecture2'>Lecture 2</button>
-<button type='submit' value='lecture3' name='lecture3'>Lecture 3</button>
-<button type='submit' value='lecture4' name='lecture4'>Lecture 4</button>
-<button type='submit' value='lecture5' name='lecture5'>Lecture 5</button>
-<button type='submit' value='lecture6' name='lecture6'>Lecture 6</button>
-<button type='submit' value='lecture7' name='lecture7'>Lecture 7</button>
-<button type='submit' value='lecture8' name='lecture8'>Lecture 8</button>
-<button type='submit' value='lecture9' name='lecture9'>Lecture 9</button>
-<button type='submit' value='lecture10' name='lecture10'>Lecture 10</button>
-<button type='submit' value='lecture11' name='lecture11'>Lecture 11</button>
-<button type='submit' value='lecture25' name='lecture25'>Lecture 25</button>
+<button type='submit' value='lecture1' name='lecture1'>{{ .SubTitle }} 1</button>
+<button type='submit' value='lecture2' name='lecture2'>{{ .SubTitle }} 2</button>
+<button type='submit' value='lecture3' name='lecture3'>{{ .SubTitle }} 3</button>
+<button type='submit' value='lecture4' name='lecture4'>{{ .SubTitle }} 4</button>
+<button type='submit' value='lecture5' name='lecture5'>{{ .SubTitle }} 5</button>
+<button type='submit' value='lecture6' name='lecture6'>{{ .SubTitle }} 6</button>
+<button type='submit' value='lecture7' name='lecture7'>{{ .SubTitle }} 7</button>
+<button type='submit' value='lecture8' name='lecture8'>{{ .SubTitle }} 8</button>
+<button type='submit' value='lecture9' name='lecture9'>{{ .SubTitle }} 9</button>
+<button type='submit' value='lecture10' name='lecture10'>{{ .SubTitle }} 10</button>
+<button type='submit' value='lecture11' name='lecture11'>{{ .SubTitle }} 11</button>
+<button type='submit' value='lecture25' name='lecture25'>{{ .SubTitle }} 25</button>
 </div>
 </form>
 </p>

@@ -79,11 +79,416 @@ body {
 body {
   background-color:#e7ecef;
 }
+.btn-home{
+  margin-left: 25px;
+}
 </style>
 </head>
+
+<div class="btn-home">
+<form action="/goHome" method="POST">
+  <button type="submit" class="btn btn-primary">Home</button>
+</form>
+</div>
 <body>
 
-<h1>Learn vocabulary with images</h1>
-<h2>Hover over the image to get the persian and english word</h2>
+<h1>{{ .Title }}</h1>
+<h2>{{ .SubTitle }}</h2>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img87.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>pomme</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img83.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>mur</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img50.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>vieux</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img88.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>sale</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img89.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>blanc</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img90.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>soir/nuit</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img91.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>se réveiller</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img92.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>juste</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img92.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>faux</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img93.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>jaune</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img94.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>neige</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img37.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>main</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img95.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>bracelet</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img96.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>lire/chanter</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img117.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>table</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img45.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>sourcil</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img118.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>chaise</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img119.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>chien</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img120.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>arbre</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img123.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>fleur</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img124.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>roue</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img126.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>ordinateur</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img127.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>cinéma</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img128.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>pistache</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img129.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>sandales</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img130.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>larme</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img131.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>fille</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img132.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>rue</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img133.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>boisson</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img134.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>repas</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img54.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>vêtement</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img136.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>froid</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img137.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>chaud</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img138.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>vélo</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img139.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>oiseau</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img140.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2></h2>
+<h2>chameau</h2>
+</div>
+</div>
+</div>
 </body>
 </html>

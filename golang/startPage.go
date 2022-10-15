@@ -3,7 +3,6 @@ package main
 import (
   "net/http"
   "html/template"
-  "fmt"
 )
 
 type buttonValue struct {
@@ -128,7 +127,6 @@ func startPageActionPost(w http.ResponseWriter, r *http.Request){
 
   Language_url := Language_user + "To" + Language_to_learn
 
-  fmt.Println(Language_url)
   switch buttonVal.Val {
   // Handle method
   case "wordList":

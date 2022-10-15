@@ -79,12 +79,21 @@ body {
 body {
   background-color:#e7ecef;
 }
+.btn-home{
+  margin-left: 25px;
+}
 </style>
 </head>
+
+<div class="btn-home">
+<form action="/goHome" method="POST">
+  <button type="submit" class="btn btn-primary">Home</button>
+</form>
+</div>
 <body>
 
-<h1>Learn vocabulary with images</h1>
-<h2>Hover over the image to get the persian and english word</h2>
+<h1>{{ .Title }}</h1>
+<h2>{{ .SubTitle }}</h2>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
@@ -187,51 +196,18 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img90.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img52.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>ce/cet/cette</h2>
-<h2>آن</h2>
+<h2>noir</h2>
+<h2>سیاه</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img91.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>cheveux</h2>
-<h2>مو</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img92.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>garçon</h2>
-<h2>پسر</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img92.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>petit</h2>
-<h2>کوچک</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img93.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img53.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>sac</h2>
@@ -242,29 +218,40 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img94.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img54.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>enfant</h2>
-<h2>بچه</h2>
+<h2>vêtements</h2>
+<h2>لباس</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img37.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img55.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>synagogue</h2>
-<h2>کنیسه</h2>
+<h2>téléphone</h2>
+<h2>موبایل</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img95.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img56.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>église</h2>
+<h2>کلیسا</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img10.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>ville</h2>
@@ -275,7 +262,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img96.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img57.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>langue</h2>
@@ -286,7 +273,18 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img117.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img58.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>maison</h2>
+<h2>خانه</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img59.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>magasin</h2>
@@ -297,18 +295,18 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img45.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img60.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>court</h2>
-<h2>کوتاه</h2>
+<h2>bras</h2>
+<h2>بازو</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img118.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img61.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>pied/jambe</h2>
@@ -319,18 +317,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img119.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>peuple</h2>
-<h2>مردم</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img120.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img62.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>chat</h2>
@@ -341,40 +328,18 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img123.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img63.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>chapitre</h2>
-<h2>باب</h2>
+<h2>ouvert</h2>
+<h2>باز</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img124.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>mémoire</h2>
-<h2>یاد</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img126.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>avide</h2>
-<h2>آز</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img127.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img64.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>serpent</h2>
@@ -385,7 +350,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img128.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img2.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>vent</h2>
@@ -396,7 +361,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img129.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img65.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>feu</h2>
@@ -407,66 +372,11 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img130.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>précieux</h2>
-<h2>ناب</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img131.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>maintenant</h2>
-<h2>حالا</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img132.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>état (bien-être)</h2>
-<h2>حال</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img133.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>riche</h2>
-<h2>دارا</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img134.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img149.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>tapis</h2>
 <h2>قرش</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img54.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>rayonnant</h2>
-<h2>تابان</h2>
 </div>
 </div>
 </div>

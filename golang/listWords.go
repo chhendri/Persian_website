@@ -23,10 +23,27 @@ type Lecture struct {
 }
 
 
-func listWordsGet(w http.ResponseWriter, r *http.Request)  {
+func listWordsGet(user_language string) http.HandlerFunc {
+  return func(w http.ResponseWriter, r *http.Request) {
+
+  var Titles inputWords
+
+  // Set the title of the page
+  if user_language == "farsi" {
+    Titles.Title = "Choose your lecture"
+    Titles.SubTitle = "Lecture"
+  } else if user_language == "french" {
+    Titles.Title = "Choisissez votre cours"
+    Titles.SubTitle = "Cours"
+  } else if user_language == "german" {
+    Titles.Title = "Wahle ihrem Kurs"
+    Titles.SubTitle = "Kurs"
+  }
+
   // Main function to display the listWords page
   tmpl := template.Must(template.ParseFiles("html_files/listWords.html"))
-  tmpl.Execute(w, nil)
+  tmpl.Execute(w, Titles)
+  }
 }
 
 
@@ -43,8 +60,20 @@ func listWordsPost(w http.ResponseWriter, r *http.Request){
 func lectureHandler(leid string, user_language string, to_learn_language string) http.HandlerFunc {
   // Function to display the vocabulary of a lecture
     return func(w http.ResponseWriter, r *http.Request) {
+
+      var Titles inputWords
+
+      // Set the title of the page
+      if user_language == "farsi" {
+        Titles.Title = "Vocabular of lecture"
+      } else if user_language == "french" {
+        Titles.Title = "Vocabulaire du cours"
+      } else if user_language == "german" {
+        Titles.Title = "Vokabular von dem Kurs"
+      }
+
       tmpl_lec := template.Must(template.ParseFiles("html_files/" + user_language+ "/Lecture" + leid + "_" + user_language + "_" + to_learn_language + ".html"))
-      tmpl_lec.Execute(w, nil)
+      tmpl_lec.Execute(w, Titles)
     }
 }
 
@@ -55,7 +84,7 @@ func tableVocabulary(jsonObj []Word, lecture_id string, user_language string, to
 
   htmlString += "<!Doctype html>\n<html>\n<head>\n<meta charset='utf-8'>\n<title>listWords</title>\n</head>\n<body style='background-color:#e7ecef;'>\n"
   // Set the header for the Lecture file
-  header := "<h1>Vocabulary of Lecture " + lecture_id + "</h1><table> \n"
+  header := "<h1>{{ .Title }} " + lecture_id + "</h1><table> \n"
   // Set the header
   htmlString += header
 
@@ -149,4 +178,53 @@ func numberLectures() ([]Lecture, error){
   }
 
   return lectures, err
+}
+
+
+
+func wordsByWoid(Woid int, user_language string, to_learn_language string) (correctionWords) {
+    // Get the words for
+    var word Word
+    // Get the words for this Woid
+    var corrWor correctionWords
+    // String giving the Query
+    var query string
+
+    // Query the database according to the scenario
+    query = buildQueryWordByWoid(user_language, to_learn_language)
+    rows, err := db.Query(query, Woid)
+    if err != nil {
+        return corrWor
+    }
+
+    defer rows.Close()
+    // Loop through rows, using Scan to assign column data to struct fields.
+    for rows.Next() {
+        if err := rows.Scan(&word.Woid, &word.Fran, &word.Pers, &word.Leid, &word.Imag); err != nil {
+            return corrWor
+        }
+    }
+
+    corrWor.QueryWord = word.Fran
+    corrWor.CorrectWord = word.Pers
+
+    return corrWor
+}
+
+
+func buildQueryWordByWoid(user_language string, to_learn_language string) (query string) {
+  if user_language == "french" && to_learn_language == "farsi" {
+    query = "SELECT woid, fran, pers, leid, imag FROM Words WHERE woid = ?"
+  } else if user_language == "french" && to_learn_language == "german" {
+    query = "SELECT woid, fran, germ, leid, imag FROM Words WHERE woid = ?"
+  } else if user_language == "german" && to_learn_language == "french" {
+    query = "SELECT woid, germ, fran, leid, imag FROM Words WHERE woid = ?"
+  } else if user_language == "german" && to_learn_language == "farsi" {
+    query = "SELECT woid, germ, pers, leid, imag FROM Words WHERE woid = ?"
+  } else if user_language == "farsi" && to_learn_language == "french" {
+    query = "SELECT woid, pers, fran, leid, imag FROM Words WHERE woid = ?"
+  } else if user_language == "farsi" && to_learn_language == "german" {
+    query = "SELECT woid, pers, germ, leid, imag FROM Words WHERE woid = ?"
+  }
+  return query
 }

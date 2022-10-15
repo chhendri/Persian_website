@@ -79,12 +79,21 @@ body {
 body {
   background-color:#e7ecef;
 }
+.btn-home{
+  margin-left: 25px;
+}
 </style>
 </head>
+
+<div class="btn-home">
+<form action="/goHome" method="POST">
+  <button type="submit" class="btn btn-primary">Home</button>
+</form>
+</div>
 <body>
 
-<h1>Learn vocabulary with images</h1>
-<h2>Hover over the image to get the persian and english word</h2>
+<h1>{{ .Title }}</h1>
+<h2>{{ .SubTitle }}</h2>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
@@ -92,7 +101,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>pain</h2>
-<h2>Brot</h2>
+<h2></h2>
 </div>
 </div>
 </div>
@@ -103,7 +112,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>vent</h2>
-<h2>Wind</h2>
+<h2></h2>
 </div>
 </div>
 </div>
@@ -114,7 +123,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>pluie</h2>
-<h2>Regen</h2>
+<h2></h2>
 </div>
 </div>
 </div>
@@ -125,7 +134,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>farine</h2>
-<h2>Mehl</h2>
+<h2></h2>
 </div>
 </div>
 </div>
@@ -136,7 +145,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>nuages</h2>
-<h2>Wolken</h2>
+<h2></h2>
 </div>
 </div>
 </div>
@@ -147,7 +156,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>grenade</h2>
-<h2>Granate</h2>
+<h2></h2>
 </div>
 </div>
 </div>
@@ -158,7 +167,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>porte</h2>
-<h2>Tür</h2>
+<h2></h2>
 </div>
 </div>
 </div>
@@ -169,7 +178,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>balançoire</h2>
-<h2>Schaukel</h2>
+<h2></h2>
 </div>
 </div>
 </div>
@@ -180,7 +189,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>crayon</h2>
-<h2>Bleistift</h2>
+<h2></h2>
 </div>
 </div>
 </div>
@@ -191,7 +200,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>ville</h2>
-<h2>Stadt</h2>
+<h2></h2>
 </div>
 </div>
 </div>
@@ -202,183 +211,7 @@ body {
 </div>
 <div class='flip-box-back'>
 <h2>village</h2>
-<h2>Dorf</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img52.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>pain</h2>
-<h2>Brot</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img53.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>vent</h2>
-<h2>Wind</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img54.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>pluie</h2>
-<h2>Regen</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img55.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>farine</h2>
-<h2>Mehl</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img56.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>nuages</h2>
-<h2>Wolken</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img10.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>porte</h2>
-<h2>Tür</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img57.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>précieux</h2>
-<h2>wertvoll</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img58.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>cri</h2>
-<h2>Schrei</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img59.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>sage</h2>
-<h2>weise</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img60.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>crayon</h2>
-<h2>Bleistift</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img61.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>aide</h2>
-<h2>Hilfe</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img62.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>fin</h2>
-<h2>Ende</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img63.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>introduction</h2>
-<h2>Einführung</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img64.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>monsieur</h2>
-<h2>Herr</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img2.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>madame</h2>
-<h2>Frau</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img65.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>merci</h2>
-<h2>danke</h2>
+<h2></h2>
 </div>
 </div>
 </div>

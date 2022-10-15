@@ -48,42 +48,51 @@
     height:50px;
     display:inline-block
   }
+  .btn-home{
+  	margin-left: 25px;
+  }
 </style>
 </head>
 
+<div class="btn-home">
+  <form action="/goHome" method="POST">
+    <button type="submit" class="btn btn-primary">Home</button>
+  </form>
+</div>
+
 <body>
-  <h1>Learn Persian</h1>
-  <h2>Learn Persian with this interactive site</h2>
+  <h1>Fancy Farsi</h1>
+  <h2>Lerne Persisch mit diese interaktive Website</h2>
   <div_spacer></div_spacer>
 
   <p>
     <div align="center">
-      <h2> Choose the language you are confortable in </h2>
+      <h2>  Dem Sprache dass sie kennen </h2>
       <form action="/chooseLanguageUser" method="POST">
-        <button type="submit" name="farsi" value="farsi">Farsi</button>
-        <button type="submit" name="french" value="french">French</button>
-        <selected_button type="submit" name="german" value="german">German</selected_button>
+        <button type="submit" name="farsi" value="farsi">Persisch</button>
+        <button type="submit" name="french" value="french">Französisch</button>
+        <selected_button type="submit" name="german" value="german">Deutsch</selected_button>
       </form>
     </div>
 
     <div_spacer></div_spacer>
 
     <div align="center">
-      <h2> Choose the language you want to learn </h2>
+      <h2> Dem Sprache dem sie lernen wollen</h2>
       <form action="/chooseLanguageToLearn" method="POST">
-        <selected_button type="submit" name="german" value="german">Farsi</selected_button>
-        <button type="submit" name="french" value="french">French</button>
+        <selected_button type="submit" name="german" value="german">Persisch</selected_button>
+        <button type="submit" name="french" value="french">Französisch</button>
       </form>
     </div>
 
     <div_spacer></div_spacer>
 
     <div align="center">
-      <h2>Choose what you want to do</h2>
+      <h2>Wähle was sie machen wollen</h2>
       <form action="/chooseAction" method="POST">
-        <button type="submit" name="wordList" value="wordList">Vocabulary list</button>
-        <button type="submit" name="wordTrainer" value="wordTrainer">Train words</button>
-        <button type="submit" name="imageTrainer" value="imageTrainer">Train with images</button>
+        <button type="submit" name="wordList" value="wordList">Vokabular Liste</button>
+        <button type="submit" name="wordTrainer" value="wordTrainer">Wörter üben</button>
+        <button type="submit" name="imageTrainer" value="imageTrainer">Mit Bilder üben</button>
       </form>
     </div>
   </p>

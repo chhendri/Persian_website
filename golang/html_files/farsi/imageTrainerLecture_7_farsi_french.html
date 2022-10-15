@@ -79,16 +79,36 @@ body {
 body {
   background-color:#e7ecef;
 }
+.btn-home{
+  margin-left: 25px;
+}
 </style>
 </head>
+
+<div class="btn-home">
+<form action="/goHome" method="POST">
+  <button type="submit" class="btn btn-primary">Home</button>
+</form>
+</div>
 <body>
 
-<h1>Learn vocabulary with images</h1>
-<h2>Hover over the image to get the persian and english word</h2>
+<h1>{{ .Title }}</h1>
+<h2>{{ .SubTitle }}</h2>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img189.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img93.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>jaune</h2>
+<h2>زرد</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img47.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>livre</h2>
@@ -99,128 +119,29 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img190.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img141.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>temps(heure)</h2>
-<h2>زمان</h2>
+<h2>beurre</h2>
+<h2>کره</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img191.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img142.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>secret</h2>
-<h2>راز</h2>
+<h2>crème</h2>
+<h2>کرم</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img62.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>soldat</h2>
-<h2>سرباز</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img192.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>frontière</h2>
-<h2>مرز</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img193.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>fièvre</h2>
-<h2>تب</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img119.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>hache</h2>
-<h2>تبر</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img194.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>pire</h2>
-<h2>بدتر</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img195.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>mal entendant</h2>
-<h2>نا شنوا</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img197.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>aveugle</h2>
-<h2>کور</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img196.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>mal voyant</h2>
-<h2>نا بینا</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img198.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>appel</h2>
-<h2>ندا</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img199.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img53.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>sac</h2>
@@ -231,7 +152,18 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img200.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img53.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>sac</h2>
+<h2>ساک</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img144.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>yasmin</h2>
@@ -242,7 +174,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img201.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img145.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>mer</h2>
@@ -253,7 +185,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img202.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img146.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>paille</h2>
@@ -264,7 +196,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img203.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img87.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>pomme</h2>
@@ -275,7 +207,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img204.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img148.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>plateau</h2>
@@ -286,29 +218,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img205.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>proche</h2>
-<h2>نزدیک</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img206.jpeg' style='width:300px;height:200px'>
-</div>
-<div class='flip-box-back'>
-<h2>sous</h2>
-<h2>زیر</h2>
-</div>
-</div>
-</div>
-<div class='flip-box'>
-<div class='flip-box-inner'>
-<div class='flip-box-front'>
-<img src='../../Data/images/img207.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img125.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>ail</h2>
@@ -319,18 +229,40 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img208.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img149.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>sur</h2>
-<h2>رو</h2>
+<h2>tapis</h2>
+<h2>فرش</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img209.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img150.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>cahier</h2>
+<h2>دفتر</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img94.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>neige</h2>
+<h2>برف</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img151.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>féé</h2>
@@ -341,18 +273,29 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img209.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img152.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>demain</h2>
-<h2>فردا</h2>
+<h2>fromage</h2>
+<h2>پنیر</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img210.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img153.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>message</h2>
+<h2>پیام</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img65.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>feu</h2>
@@ -363,7 +306,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img210.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img154.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>nuit</h2>
@@ -374,18 +317,29 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img211.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img50.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>cette nuit</h2>
-<h2>امشب</h2>
+<h2>vieux</h2>
+<h2>پیر</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img212.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img155.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>chaussures</h2>
+<h2>کفش</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img156.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>briquet</h2>
@@ -396,7 +350,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img212.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img157.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>canard</h2>
@@ -407,7 +361,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img213.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img158.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>chèvre</h2>
@@ -418,7 +372,18 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img214.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img159.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>cuillière</h2>
+<h2>قاشق</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img160.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>assiètte</h2>
@@ -429,7 +394,18 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img215.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img161.jpeg' style='width:300px;height:200px'>
+</div>
+<div class='flip-box-back'>
+<h2>chambre</h2>
+<h2>آتاق</h2>
+</div>
+</div>
+</div>
+<div class='flip-box'>
+<div class='flip-box-inner'>
+<div class='flip-box-front'>
+<img src='../../Data/images/img162.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>sucre en cube</h2>
@@ -440,7 +416,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img216.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img163.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>derrière/dos</h2>
@@ -451,18 +427,18 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img63.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img42.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
-<h2>Orient/Est</h2>
-<h2>شرق</h2>
+<h2>rouge</h2>
+<h2>قرمز</h2>
 </div>
 </div>
 </div>
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img218.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img164.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>gomme</h2>
@@ -473,7 +449,7 @@ body {
 <div class='flip-box'>
 <div class='flip-box-inner'>
 <div class='flip-box-front'>
-<img src='../../Data/images/img219.jpeg' style='width:300px;height:200px'>
+<img src='../../Data/images/img165.jpeg' style='width:300px;height:200px'>
 </div>
 <div class='flip-box-back'>
 <h2>barque</h2>

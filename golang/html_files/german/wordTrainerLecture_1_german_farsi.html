@@ -18,12 +18,6 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .btn {
-    width: 100%;
-    text-align: center;
-    margin: 20px;
-  }
-
   button {
     color: #274c77;
     background-color: #e7ecef;
@@ -34,7 +28,6 @@
     margin-top:50px;
     margin-right:10px;
   }
-
   button:hover {
     color: #e7ecef;
     background-color: #274c77;
@@ -114,388 +107,215 @@
     font-size: 15px;
   }
 
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .home{
+  	margin-left: 25px;
+  }
 </style>
 </head>
+
+<div class="home">
+  <form action="/goHome" method="POST">
+    <button type="submit" class="button">Home</button>
+  </form>
+</div>
 <header>
   <div class="text-box">
-    <h1>Train your vocabulary</h1>
-    <h2>For each word, enter the correct translation and click on submit to get the correction.</h2>
-  </div>
+  <h1>{{ .Title }}</h1>
+  <h2>{{ .SubTitle }}</h2>
+</div>
 </header>
-<body>
-  <div class="container">
-      <form id="survey-form" action="/wordTrainLecturePost" method="POST">
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Papa</label>
+<body><div class='container'>
+<form id='survey-form' action='/germanTofarsi/wordTrain/lecture1/corr' method='POST'><div class='labels'>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_1' name='response_1' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Brot</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_2' name='response_2' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Wind</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_3' name='response_3' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Last</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_4' name='response_4' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Regen</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_5' name='response_5' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Mehl</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_6' name='response_6' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Wolken</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_7' name='response_7' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Granate</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_8' name='response_8' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Tür</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_9' name='response_9' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>wertvoll</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_10' name='response_10' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Schrei</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_11' name='response_11' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Gerechtigkeit</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_12' name='response_12' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>weise</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_13' name='response_13' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Mutter</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_14' name='response_14' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Schaukel</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_15' name='response_15' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Bleistift</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_16' name='response_16' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Hilfe</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_17' name='response_17' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>weit</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_18' name='response_18' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Ende</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_19' name='response_19' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>unwissend</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_20' name='response_20' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Stadt</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_21' name='response_21' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Dorf</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_22' name='response_22' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Einführung</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_23' name='response_23' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Ich danke Ihnen vielmals.</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_24' name='response_24' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Herr</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_25' name='response_25' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Frau</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_26' name='response_26' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>danke</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_27' name='response_27' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Auf Wiedersehen (möge Gott dich beschützen)</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_28' name='response_28' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Auf Wiedersehen (möge Gott dich beschützen)</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_29' name='response_29' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Auf Wiedersehen (ich wünsche dir Gesundheit)</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_30' name='response_30' placeholder='Enter your response' autofocus>
 </div>
 <div class='labels'>
-<label id='name-label' for='word_to_translate'>Auf Wiedersehen (dein Diener)</label>
+<label id='name-label' for='word_to_translate'></label>
 </div>
 <div class='input-tab'>
 <input class='input-field' type='text' id='response_31' name='response_31' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Papa</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_122' name='response_122' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Brot</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_123' name='response_123' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Wind</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_124' name='response_124' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Last</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_125' name='response_125' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Regen</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_126' name='response_126' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Mehl</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_127' name='response_127' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Wolken</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_128' name='response_128' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Granate</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_129' name='response_129' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Tür</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_130' name='response_130' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>wertvoll</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_131' name='response_131' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Schrei</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_132' name='response_132' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Gerechtigkeit</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_133' name='response_133' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>weise</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_134' name='response_134' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Mutter</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_135' name='response_135' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Schaukel</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_136' name='response_136' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Bleistift</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_137' name='response_137' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Hilfe</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_138' name='response_138' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>weit</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_139' name='response_139' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Ende</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_140' name='response_140' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>unwissend</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_141' name='response_141' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Stadt</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_142' name='response_142' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Dorf</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_143' name='response_143' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Einführung</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_144' name='response_144' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Ich danke Ihnen vielmals.</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_145' name='response_145' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Herr</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_146' name='response_146' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Frau</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_147' name='response_147' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>danke</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_148' name='response_148' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Auf Wiedersehen (möge Gott dich beschützen)</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_149' name='response_149' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Auf Wiedersehen (möge Gott dich beschützen)</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_150' name='response_150' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Auf Wiedersehen (ich wünsche dir Gesundheit)</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_151' name='response_151' placeholder='Enter your response' autofocus>
-</div>
-<div class='labels'>
-<label id='name-label' for='word_to_translate'>Auf Wiedersehen (dein Diener)</label>
-</div>
-<div class='input-tab'>
-<input class='input-field' type='text' id='response_152' name='response_152' placeholder='Enter your response' autofocus>
 </div>
 <div class='btn'>
 <button id='submit' type='submit' name='submit' value='submit'>Submit</button>

@@ -43,7 +43,8 @@ func handleRequests() {
     myRouter := mux.NewRouter()
 
     // Main page
-    templates = template.Must(template.ParseGlob("html_files/*.html"))
+    templates = template.Must(template.ParseGlob("html_files/*/*.html"))
+
 
     // Handler for the start page
     myRouter.HandleFunc("/", startPageGet).Methods("GET")
@@ -59,11 +60,14 @@ func handleRequests() {
     myRouter.HandleFunc("/chooseAction", startPageActionPost).Methods("POST")
     http.Handle("/chooseAction", myRouter)
 
+    // Get back to home page
+    myRouter.HandleFunc("/goHome", goHome)
+    http.Handle("/goHome", myRouter)
 
     // Training with images
 
     // Farsi to French
-    myRouter.HandleFunc("/farsiTofrench/imageTrain", imageTrain_chooseLectureGet).Methods("GET")
+    myRouter.HandleFunc("/farsiTofrench/imageTrain", imageTrain_chooseLectureGet("farsi")).Methods("GET")
     myRouter.HandleFunc("/farsiTofrench/imageTrain", imageTrain_chooseLecturePost).Methods("POST")
     http.Handle("/farsiTofrench/imageTrain", myRouter)
     myRouter.HandleFunc("/farsiTofrench/imageTrain/lecture1", imageTrainer("1", "farsi", "french"))
@@ -79,7 +83,7 @@ func handleRequests() {
     myRouter.HandleFunc("/farsiTofrench/imageTrain/lecture11", imageTrainer("11", "farsi", "french"))
 
     // Farsi to german
-    myRouter.HandleFunc("/farsiTogerman/imageTrain", imageTrain_chooseLectureGet).Methods("GET")
+    myRouter.HandleFunc("/farsiTogerman/imageTrain", imageTrain_chooseLectureGet("farsi")).Methods("GET")
     myRouter.HandleFunc("/farsiTogerman/imageTrain", imageTrain_chooseLecturePost).Methods("POST")
     http.Handle("/farsiTogerman/imageTrain", myRouter)
     myRouter.HandleFunc("/farsiTogerman/imageTrain/lecture1", imageTrainer("1", "farsi", "german"))
@@ -95,7 +99,7 @@ func handleRequests() {
     myRouter.HandleFunc("/farsiTogerman/imageTrain/lecture11", imageTrainer("11", "farsi", "german"))
 
     // french to german
-    myRouter.HandleFunc("/frenchTogerman/imageTrain", imageTrain_chooseLectureGet).Methods("GET")
+    myRouter.HandleFunc("/frenchTogerman/imageTrain", imageTrain_chooseLectureGet("french")).Methods("GET")
     myRouter.HandleFunc("/frenchTogerman/imageTrain", imageTrain_chooseLecturePost).Methods("POST")
     http.Handle("/frenchTogerman/imageTrain", myRouter)
     myRouter.HandleFunc("/frenchTogerman/imageTrain/lecture1", imageTrainer("1", "french", "german"))
@@ -111,7 +115,7 @@ func handleRequests() {
     myRouter.HandleFunc("/frenchTogerman/imageTrain/lecture11", imageTrainer("11", "french", "german"))
 
     // french to farsi
-    myRouter.HandleFunc("/frenchTofarsi/imageTrain", imageTrain_chooseLectureGet).Methods("GET")
+    myRouter.HandleFunc("/frenchTofarsi/imageTrain", imageTrain_chooseLectureGet("french")).Methods("GET")
     myRouter.HandleFunc("/frenchTofarsi/imageTrain", imageTrain_chooseLecturePost).Methods("POST")
     http.Handle("/frenchTofarsi/imageTrain", myRouter)
     myRouter.HandleFunc("/frenchTofarsi/imageTrain/lecture1", imageTrainer("1", "french", "farsi"))
@@ -127,7 +131,7 @@ func handleRequests() {
     myRouter.HandleFunc("/frenchTofarsi/imageTrain/lecture11", imageTrainer("11", "french", "farsi"))
 
     // german to farsi
-    myRouter.HandleFunc("/germanTofarsi/imageTrain", imageTrain_chooseLectureGet).Methods("GET")
+    myRouter.HandleFunc("/germanTofarsi/imageTrain", imageTrain_chooseLectureGet("german")).Methods("GET")
     myRouter.HandleFunc("/germanTofarsi/imageTrain", imageTrain_chooseLecturePost).Methods("POST")
     http.Handle("/germanTofarsi/imageTrain", myRouter)
     myRouter.HandleFunc("/germanTofarsi/imageTrain/lecture1", imageTrainer("1", "german", "farsi"))
@@ -143,7 +147,7 @@ func handleRequests() {
     myRouter.HandleFunc("/germanTofarsi/imageTrain/lecture11", imageTrainer("11", "german", "farsi"))
 
     // german to french
-    myRouter.HandleFunc("/germanTofrench/imageTrain", imageTrain_chooseLectureGet).Methods("GET")
+    myRouter.HandleFunc("/germanTofrench/imageTrain", imageTrain_chooseLectureGet("german")).Methods("GET")
     myRouter.HandleFunc("/germanTofrench/imageTrain", imageTrain_chooseLecturePost).Methods("POST")
     http.Handle("/germanTofrench/imageTrain", myRouter)
     myRouter.HandleFunc("/germanTofrench/imageTrain/lecture1", imageTrainer("1", "german", "french"))
@@ -164,7 +168,7 @@ func handleRequests() {
     // Training with words
 
     // french to farsi
-    myRouter.HandleFunc("/frenchTofarsi/wordTrain", wordTrainerGet).Methods("GET")
+    myRouter.HandleFunc("/frenchTofarsi/wordTrain", wordTrainerGet("french")).Methods("GET")
     myRouter.HandleFunc("/frenchTofarsi/wordTrain", wordTrainerPost).Methods("POST")
     http.Handle("/frenchTofarsi/wordTrain", myRouter)
     myRouter.HandleFunc("/frenchTofarsi/wordTrain/lecture1", wordTrainLectureGet("1", "french", "farsi")).Methods("GET")
@@ -192,7 +196,7 @@ func handleRequests() {
 
 
     // french to german
-    myRouter.HandleFunc("/frenchTogerman/wordTrain", wordTrainerGet).Methods("GET")
+    myRouter.HandleFunc("/frenchTogerman/wordTrain", wordTrainerGet("french")).Methods("GET")
     myRouter.HandleFunc("/frenchTogerman/wordTrain", wordTrainerPost).Methods("POST")
     http.Handle("/frenchTogerman/wordTrain", myRouter)
     myRouter.HandleFunc("/frenchTogerman/wordTrain/lecture1", wordTrainLectureGet("1", "french", "german")).Methods("GET")
@@ -220,7 +224,7 @@ func handleRequests() {
 
 
     // farsi to german
-    myRouter.HandleFunc("/farsiTogerman/wordTrain", wordTrainerGet).Methods("GET")
+    myRouter.HandleFunc("/farsiTogerman/wordTrain", wordTrainerGet("farsi")).Methods("GET")
     myRouter.HandleFunc("/farsiTogerman/wordTrain", wordTrainerPost).Methods("POST")
     http.Handle("/farsiTogerman/wordTrain", myRouter)
     myRouter.HandleFunc("/farsiTogerman/wordTrain/lecture1", wordTrainLectureGet("1", "farsi", "german")).Methods("GET")
@@ -248,7 +252,7 @@ func handleRequests() {
 
 
     // farsi to french
-    myRouter.HandleFunc("/farsiTofrench/wordTrain", wordTrainerGet).Methods("GET")
+    myRouter.HandleFunc("/farsiTofrench/wordTrain", wordTrainerGet("farsi")).Methods("GET")
     myRouter.HandleFunc("/farsiTofrench/wordTrain", wordTrainerPost).Methods("POST")
     http.Handle("/farsiTofrench/wordTrain", myRouter)
     myRouter.HandleFunc("/farsiTofrench/wordTrain/lecture1", wordTrainLectureGet("1", "farsi", "french")).Methods("GET")
@@ -276,7 +280,7 @@ func handleRequests() {
 
 
     // german to french
-    myRouter.HandleFunc("/germanTofrench/wordTrain", wordTrainerGet).Methods("GET")
+    myRouter.HandleFunc("/germanTofrench/wordTrain", wordTrainerGet("german")).Methods("GET")
     myRouter.HandleFunc("/germanTofrench/wordTrain", wordTrainerPost).Methods("POST")
     http.Handle("/germanTofrench/wordTrain", myRouter)
     myRouter.HandleFunc("/germanTofrench/wordTrain/lecture1", wordTrainLectureGet("1", "german", "french")).Methods("GET")
@@ -304,7 +308,7 @@ func handleRequests() {
 
 
     // german to farsi
-    myRouter.HandleFunc("/germanTofarsi/wordTrain", wordTrainerGet).Methods("GET")
+    myRouter.HandleFunc("/germanTofarsi/wordTrain", wordTrainerGet("german")).Methods("GET")
     myRouter.HandleFunc("/germanTofarsi/wordTrain", wordTrainerPost).Methods("POST")
     http.Handle("/germanTofarsi/wordTrain", myRouter)
     myRouter.HandleFunc("/germanTofarsi/wordTrain/lecture1", wordTrainLectureGet("1", "german", "farsi")).Methods("GET")
@@ -336,7 +340,7 @@ func handleRequests() {
     // List of the words per lecture
 
     // french to farsi
-    myRouter.HandleFunc("/frenchTofarsi/listWords", listWordsGet).Methods("GET")
+    myRouter.HandleFunc("/frenchTofarsi/listWords", listWordsGet("french")).Methods("GET")
     myRouter.HandleFunc("/frenchTofarsi/listWords", listWordsPost).Methods("POST")
     http.Handle("/frenchTofarsi/listWords", myRouter)
     myRouter.HandleFunc("/frenchTofarsi/listWords/lecture1", lectureHandler("1", "french", "farsi"))
@@ -352,7 +356,7 @@ func handleRequests() {
     myRouter.HandleFunc("/frenchTofarsi/listWords/lecture11", lectureHandler("11", "french", "farsi"))
 
     // french to german
-    myRouter.HandleFunc("/frenchTogerman/listWords", listWordsGet).Methods("GET")
+    myRouter.HandleFunc("/frenchTogerman/listWords", listWordsGet("french")).Methods("GET")
     myRouter.HandleFunc("/frenchTogerman/listWords", listWordsPost).Methods("POST")
     http.Handle("/frenchTogerman/listWords", myRouter)
     myRouter.HandleFunc("/frenchTogerman/listWords/lecture1", lectureHandler("1", "french", "german"))
@@ -368,7 +372,7 @@ func handleRequests() {
     myRouter.HandleFunc("/frenchTogerman/listWords/lecture11", lectureHandler("11", "french", "german"))
 
     // farsi to german
-    myRouter.HandleFunc("/farsiTogerman/listWords", listWordsGet).Methods("GET")
+    myRouter.HandleFunc("/farsiTogerman/listWords", listWordsGet("farsi")).Methods("GET")
     myRouter.HandleFunc("/farsiTogerman/listWords", listWordsPost).Methods("POST")
     http.Handle("/farsiTogerman/listWords", myRouter)
     myRouter.HandleFunc("/farsiTogerman/listWords/lecture1", lectureHandler("1", "farsi", "german"))
@@ -384,7 +388,7 @@ func handleRequests() {
     myRouter.HandleFunc("/farsiTogerman/listWords/lecture11", lectureHandler("11", "farsi", "german"))
 
     // farsi to french
-    myRouter.HandleFunc("/farsiTofrench/listWords", listWordsGet).Methods("GET")
+    myRouter.HandleFunc("/farsiTofrench/listWords", listWordsGet("farsi")).Methods("GET")
     myRouter.HandleFunc("/farsiTofrench/listWords", listWordsPost).Methods("POST")
     http.Handle("/farsiTofrench/listWords", myRouter)
     myRouter.HandleFunc("/farsiTofrench/listWords/lecture1", lectureHandler("1", "farsi", "french"))
@@ -400,7 +404,7 @@ func handleRequests() {
     myRouter.HandleFunc("/farsiTofrench/listWords/lecture11", lectureHandler("11", "farsi", "french"))
 
     // german to french
-    myRouter.HandleFunc("/germanTofrench/listWords", listWordsGet).Methods("GET")
+    myRouter.HandleFunc("/germanTofrench/listWords", listWordsGet("german")).Methods("GET")
     myRouter.HandleFunc("/germanTofrench/listWords", listWordsPost).Methods("POST")
     http.Handle("/germanTofrench/listWords", myRouter)
     myRouter.HandleFunc("/germanTofrench/listWords/lecture1", lectureHandler("1", "german", "french"))
@@ -416,7 +420,7 @@ func handleRequests() {
     myRouter.HandleFunc("/germanTofrench/listWords/lecture11", lectureHandler("11", "german", "french"))
 
     // german to farsi
-    myRouter.HandleFunc("/germanTofarsi/listWords", listWordsGet).Methods("GET")
+    myRouter.HandleFunc("/germanTofarsi/listWords", listWordsGet("german")).Methods("GET")
     myRouter.HandleFunc("/germanTofarsi/listWords", listWordsPost).Methods("POST")
     http.Handle("/germanTofarsi/listWords", myRouter)
     myRouter.HandleFunc("/germanTofarsi/listWords/lecture1", lectureHandler("1", "german", "farsi"))
