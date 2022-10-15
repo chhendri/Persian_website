@@ -20,8 +20,7 @@ func constr_htmlLectures (headerFileName string) (){
   // Construct the html file for listWords
 
   var htmlString string
-  // Find the number of lectures in the 
-  base
+  // Find the number of lectures in the
   n_lectures, err := numberLectures()
   // Read the header file
   htmlHeaderFile := headerFileName + "_header.html"
