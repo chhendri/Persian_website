@@ -3,7 +3,7 @@ version: "3"
 services:
   go:
     build:
-      dockerfile: docker/golang/Dockerfile
+      dockerfile: docker/V2/Dockerfile
       context: .
     ports:
       - 127.0.0.1:8000:8000
