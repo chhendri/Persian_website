@@ -1,0 +1,162 @@
+WORD_ID	THEME_ID	SUBTHEME	FRENCH	DUTCH	GERMAN	ENGLISH	PERSIAN	IMAGE_ID
+1	2	Clothes	vêtement	kleding	Kleidung	clothing	لباس	clothes.jpeg
+2	2	Clothes	écharpe	sjaal	Schal	scarf	شال	scarf.jpeg
+3	2	Clothes	gants	handschoenen	Handschuhe	gloves	دستکش	gloves.jpeg
+4	2	Clothes	montre	horloge	Uhr	watch	ساعت	watch.jpeg
+5	2	Clothes	lunettes	bril	Brille	glasses	عینک	glasses.jpeg
+6	2	Clothes	lunettes de soleil	zonnebril	Sonnenbrille	sunglasses	عینک آفتابی	sunglasses.jpeg
+7	2	Clothes	cravate	das	Krawatte	tie	کراوات	tie.jpeg
+8	2	Clothes	ceinture	riem	Gürtel	belt	کمربند	belt.jpeg
+9	2	Clothes	sac	tas	Tasche	bag	کیف	bag.jpeg
+10	2	Clothes	chapeau	hoed	Hut	hat	کلاه	hat.jpeg
+11	2	Clothes	bracelet	armband	Armband	bracelet	دستبند	bracelet.jpeg
+12	2	Clothes	bague	ring	Ring	ring	حلقه	ring.jpeg
+13	2	Clothes	collier	ketting	Halskette	necklace	گردنبند	necklace.jpeg
+14	2	Clothes	maillot de bain	zwemkleding	Badeanzug	swim suit	لباس شنا	swimsuit.jpeg
+15	2	Clothes	culotte	slipje	Höschen	panties		panty.jpeg
+16	2	Clothes	soutien-gorge	BH	BH	bra		bra.jpeg
+17	2	Clothes	sous-vêtements	ondergoed	Unterwäsche	underwear	لباس زیر	underwear.jpeg
+18	2	Clothes	chausettes	sokken	Socken	socks	جوراب	socks.jpeg
+19	2	Clothes	peignoir	badjas	Bademantel	bathrobe		bathrobe.jpeg
+20	2	Clothes	pyjama	pyjama	Pyjama	pyjamas	پیژامه	pyjama.jpeg
+21	2	Clothes	T-shirt	T-shirt	T-Shirt	T-shirt	تیشرت	T-shirt.jpeg
+22	2	Clothes	chemise	shirt	Hemd	shirt	پیراهن	shirt.jpeg
+23	2	Clothes	robe	jurk	Kleid	dress	پیراهن	dress.jpeg
+24	2	Clothes	jupe	rok	Rock	skirt	دامن	skirt.jpeg
+25	2	Clothes	veste	jas	Jacke	jacket	ژاکت	jacket.jpeg
+26	2	Clothes	costume	pak	Anzug	suit	کاستیوم	suit.jpeg
+27	2	Clothes	manteau	jas	Mantel	coat	پالتو	coat.jpeg
+28	2	Clothes	chaussures	schoenen	Schuhe	shoes	کفش	shoes.jpeg
+29	2	Clothes	chaussures à talons	hakken	Absatzschuhe	heels		high_heels.jpeg
+30	2	Clothes	bottes	laarzen	Stiefel	boots	چکمه	boots.jpeg
+31	2	Clothes	pantoufles	pantoffels	Hausschuhe	slippers		slippers.jpeg
+32	2	Clothes	pull	trui	Pullover	jumper		jumper.jpeg
+33	2	Clothes	pantalon	broek	Hose	trousers	شلوار	pants.jpeg
+34	2	Clothes	gilet	vest	Weste	coat	جلیقه	gilet.jpeg
+35	2	Clothes	marché	markt	Markt	market	بازار	market.jpeg
+36	2	Others	ici	hier	Hier	here	اینجا	
+37	2	Family	mère	moeder	Mutter	mother	مدار	
+38	2	Verbs	aller	gaan	gehen	to go	رفتن	
+39	2	Verbs	je vais	ik ga	ich gehe	I go	من می روم	
+40	2	Verbs	tu vas	jij gaat	du gehst	you go	تو می روی	
+41	2	Verbs	il/elle va	hij/zij gaat	er/sie/er geht	he/she goes	او می رود	
+42	2	Verbs	nous allons	wij gaan	wir gehen	we go	ما می رویم	
+43	2	Verbs	vous allez	jullie gaan	ihr geht	you go	شما می روید	
+44	2	Verbs	ils/elles vont	zij gaan	sie gehen	they go	آنها می روند	
+45	2	Verbs	vouloir	willen	wollen	to want	خواستن	
+46	2	Verbs	je veux	ik wil	ich will	I want	من می خواهم	
+47	2	Verbs	tu veux	jij wilt	du willst	you want	تو می خواهی	
+48	2	Verbs	il/elle veut	hij/zij wil	er/sie/er will	he/she wants	او می خواهد	
+49	2	Verbs	nous voulons	wij willen	wir wollen	we want	ما می خواهیم	
+50	2	Verbs	vous voulez	jullie willen	ihr wollt	you want	شما می خواهید	
+51	2	Verbs	ils/elles veulent	zij willen	sie wollen	they want	آنها می خواهند	
+52	2	Others	quel	welke	welche	which	چی	
+53	2	Numbers	un	één	ein	one	یک	
+54	2	Places	magasin	winkel	Laden	shop	فروشگاه	
+55	2	Family	monsieur	mijnheer	Herr	mister	آقا	
+56	2	Family	mesdames	damen	Damen	ladies	خانم ها	
+57	1	Others	bonjour	hallo	hallo	hello	سلام	
+58	2	Others	s’il vous plaît	alstublieft	bitte	please	لطفا	
+59	2	Colors	couleur	kleur	Farbe	color	رنگ	
+60	2	Others	pour	voor	für	for	برای	
+61	2	Colors	noir	zwart	schwarz	black	سیاه	black.jpeg
+62	2	Colors	blanc	white	weiß	white	سفید	white.jpeg
+63	2	Others	Là-bas	daar	da	there	آنجا	
+64	2	Colors	bleu	blauw	blau	blue	آبی	blue.jpeg
+65	2	Adjectives	mieux	beter	besser	better	بهتر	
+66	1	Verbs	être	zijn	sein	to be	بودن	
+67	1	Verbs	je suis	ik ben	ich bin	I am	من هستم	
+68	1	Verbs	tu es	jij bent	du bist	you are	تو هستی	
+69	1	Verbs	il/elle est	hij/zij is	er/sie/er ist	he/she is	او است	
+70	1	Verbs	nous sommes	wij zijn	wir sind	we are	ما هستیم	
+71	1	Verbs	vous êtes	jullie zijn	sie sind	you are	شما هستید	
+72	1	Verbs	ils/elles sont	zij zijn	ihr seit	they are	آنها هستند	
+73	2	Verbs	aimer	houden	lieben	to love	دوست داشتن	
+74	2	Verbs	j’aime	ik hou	ich liebe	I love	من دوست دارم	
+75	2	Verbs	tu aimes	jij houdt	du liebst	you love	تو دوست داری	
+76	2	Verbs	il/elle aime	hij/zij houdt	er/sie/er liebt	he/she loves	او دوست دارد	
+77	2	Verbs	nous aimons	wij houden	wir lieben	we love	ما دوست داریم	
+78	2	Verbs	vous aimez	jullie houden	sie lieben	you love	شما دوست دارید	
+79	2	Verbs	ils/elles aiment	zij houden	ihr liebt	they love	آنها دوست دارند	
+80	2	Adjectives	joli	mooi	schön	beautiful	زیبا	
+81	2	Others	combien	hoeveel	wie viel	how much	چند	
+82	2	Adjectives	pas cher	goedkoop	billig	cheap	ارزان	
+83	2	Colors	rouge	rood	rot	red	قرمز	red.jpeg
+84	2	Numbers	deux	twee	Zwei	two	دو	
+85	2	Adjectives	cher	duur	Teuer	expensive	گران	
+86	2	Colors	orange	oranje	orange	orange	نارنجی	orange.jpeg
+87	2	Colors	gris	grijs	grau	gray	خاکستری	gray.jpeg
+88	2	Colors	violet	violet	violet	violet	بنفش	purple.jpeg
+89	2	Colors	jaune	geel	gelb	yellow	زرد	yellow.jpeg
+90	2	Colors	vert	groen	grün	green	سبز	green.jpeg
+91	2	Colors	marron	bruin	braun	brown	قهوهای	brown.jpeg
+92	2	Colors	rose	roos	rosa	rose	صورتی	pink.jpeg
+93	2	Numbers	trois	drie	drei	three	سه	
+94	2	Numbers	quatre	vier	vier	four	چهار	
+95	2	Numbers	cinq	vijf	fünf	five	پنج	
+96	2	Numbers	six	zes	sechs	six	شش	
+97	2	Numbers	sept	zeven	sieben	seven	هفت	
+98	2	Numbers	huit	acht	acht	eight	هشت	
+99	2	Numbers	neuf	negen	neun	nine	نو	
+100	2	Numbers	dix	tien	zehn	ten	دو	
+101	2	Numbers	nombre	nummer	Nummer	number	شماره	
+102	2	Verbs	avoir	hebben	haben	to have	داشتن	
+103	2	Verbs	j’ai	ik heb	ich hab	I have	من می دانم	
+104	2	Verbs	tu as	jij hebt	du hast	you have	تو می دانی	
+105	2	Verbs	il/elle a 	hij/zij heeft	er/sie/er hat	he/she has	او می داند	
+106	2	Verbs	nous avons	wij hebben	wir haben	we have	ما می دانیم	
+107	2	Verbs	vous avez	jullie hebben	sie haben	you have	شما می دانید	
+108	2	Verbs	ils/elles ont	zij hebben	ihr habt	they have	آنها می دانند	
+109	2	Verbs	acheter	kopen	kaufen	to buy	خریدن	
+110	2	Verbs	j’achète	ik koop	ich kaufe	I buy	من می خریدم	
+111	2	Verbs	tu achètes	jij koopt	du kaufst	you buy	تو می خریدی	
+112	2	Verbs	il/elle achète	hij/zij koopt	er/sie/er kauft	he/she buys	او می خرید	
+113	2	Verbs	nous achetons	wij kopen	wir kaufen	we buy	ما می خریم	
+114	2	Verbs	vous achetez	jullie kopen	sie kaufen	you buy	شما می خرید	
+115	2	Verbs	ils/elles achètent	zij kopen	ihr kauft	they buy	آنها می خرند	
+116	2	Objects	argent	geld	Geld	money	پول	money.jpeg
+117	2	Others	oui	ja	ja	yes	بله	
+118	2	Others	merci	danku	danke	thanks	تشکر	
+119	2	Sayings	au revoir	tot ziens	auf Wiedersehen	goodbye	خدا حافظ	
+120	2	Jobs	vendeur	verkoper	Verkaufer	seller	فروشنده	
+121	1	Others	nom	naam	Name	name	اسم	
+122	1	Others	aussi	ook	auch	also	هم	
+123	1	Others	dans	in	in	in	در	
+124	1	Places	université	universiteit	Universität	university	دانشگاه	
+125	1	Places	classe	klas	Klasse	class	کلاس	class.jpeg
+126	1	Langues	Persan	persisch	Persisch	persian	فارسی	
+127	1	Jobs	camarade de classe	klassen kamaraad	Klassen Kamarad	class comrades	همکلاسی	
+128	1	Time	aujourd’hui	vandaag	Heute	today	امروز	
+129	1	Places	étage	verdieping	Stock	floor	طبقه	
+130	1	Numbers	premier	eerste	erste	first	اول	
+131	1	Numbers	deuxième	tweede	zweite	second	دوم	
+132	1	Numbers	troisième	derde	dritte	third	سوم	
+133	1	Numbers	quatrième	vierde	vierte	fourth	چهارم	
+134	1	Numbers	cinquième	vijfde	fünfte	fifth	پنجم	
+135	1	Numbers	sixième	zesde	sechste	sixth	ششم	
+136	1	Numbers	septième	zevende	siebte	seventh	هفتم	
+137	1	Numbers	huitième	achtste	achtste	eighth	هشتم	
+138	1	Numbers	neuvième	negende	neunte	nineth	نهم	
+139	1	Numbers	dixième	tiende	zehnte	tenth	دهم	
+140	1	Others	merci beaucoup	hartelijk bedankt	vielen dank	thanks a lot	خیلی ممنونم	
+141	1	Others	de rien	geen probleem	bitte	no problem	خواهش می کنم	
+142	1	Time	hier	gisteren	Gestern	yesterday	دیروز	
+143	1	Time	demain	morgen	Morgen	tomorrow	فردا	
+144	1	Time	avant-hier	eergisteren	Vorgestern	day before yesterday	پریروز	
+145	1	Time	Après-demain	overmorgen	Übermorgen	day after tomorrow	پسفردا	
+146	1	Time	semaine	week	Woche	week	هفته	
+147	1	Time	la semaine passée	vorige week	lätzte Woche	last week	هفته آیانده	
+148	1	Time	la semaine prochaine	volgende week	nächste Woche	next week	هفته بعد	
+149	1	Time	mois	maand	Monat	month	ماه	
+150	1	Time	année	jaar	Jahr	year	سال	
+151	3	Places	hôpital	ziekenhuis	Krankenhaus	hospital		
+152	3	Others	comment	hoe	wie	how		
+153	3	Jobs	médecin	arts	Arts	dokter		
+154	3	Jobs	médecin	arts	Arts	dokter		
+155	3	Adjectives	beaucoup	heel	viel	a lot		
+156	3	Medical	douleur	pijn	Schmerz	pain		
+157	3	Body	ventre	buik	Bauch	stomach		
+158	3	Others	où	waar	wo	where		
+159	3	Others	uniquement	enkel	nur	only		
+160	3	Others	ou	of	oder	or		
+161	3	Others	autre	anders	anders	other		

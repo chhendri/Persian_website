@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Start Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <style>
+
+  .vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .remove-all-margin-padding{
+    margin:0 !important;
+    padding:0 !important;
+  }
+
+  .header {
+    height: 50px;
+    border-bottom: 1px solid #B8A6B3;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .text-primary, h1 {
+    color: #5D3954 !important;
+    overflow: hidden !important;
+    font-family: DM Sans !important;
+    font-weight: bold !important;
+    text-align: right !important;
+  }
+
+  .text-secondary, h2 {
+    overflow: hidden !important;
+    font-family: DM Sans !important;
+    text-align: right !important;
+    font-weight: lighter !important;
+    color:#83727E !important;
+  }
+
+  .btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #5D3954 !important;
+    color: #F4F4F4 !important;
+    font-family: DM Sans !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    border: #5D3954 !important;
+    border-radius: 26px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    margin-top: 20px !important;
+  }
+
+  .btn-primary:hover {
+    background-color: #906E52 !important;
+    color: #F4F4F4 !important;
+    border: #906E52 !important;
+  }
+
+  .btn-light {
+    overflow: hidden !important;
+    font-family: Inter !important;
+    text-align: left !important;
+    font-weight: lighter !important;
+    color:#312C30 !important;
+  }
+
+  .btn-light:hover {
+    background-color: #FFFFFF !important;
+    border: #FFFFFF !important;
+  }
+
+  svg {
+  	width: 100%;
+  	height: 100%;
+  	min-height: 100%;
+  }
+
+	.dropdown {
+		display: inline-block;
+		position: relative;
+	}
+
+	.dropdown-content {
+			display: none;
+			position: absolute;
+			width: 100%;
+			overflow: auto;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+
+	.dropdown:hover .dropdown-content {
+			display: block;
+	}
+
+	.dropdown-content a {
+		display: block;
+		color: #312C30;
+		padding: 5px;
+		text-decoration: none;
+	}
+
+	.dropdown-content a:hover {
+		color: #F4F4F4;
+		background-color: #906E52;
+	}
+
+	.box-4 {
+		width: 100%;
+		float: right;
+		margin: 0px 50px 50px 0px;
+	}
+
+  </style>
+
+  </head>
+	<body>
+    <div class="container-fluid remove-all-margin-padding">
+
+			<!-- Header -->
+			{{ with .Header }}
+			<div class="header">
+				<div class="row">
+					<!-- Left spacing -->
+					<div class="col-1"></div>
+					<!-- Home page -->
+					<div class="col-2">
+						<form action="/lang/english/chooseParams" method="GET">
+							<button class="btn btn-light">{{ .Home }}</button>
+						</form>
+					</div>
+					<div class="col-2">
+						<div class="dropdown">
+							<button class="btn btn-light">{{ .Language }}</button>
+							<div class="dropdown-content">
+								<a href="/lang/english" name="English">{{ .English }}</a>
+								<a href="/lang/french" name="French">{{ .French }}</a>
+								<a href="/lang/persian" name="Persian">{{ .Persian }}</a>
+								<a href="/lang/dutch" name="Dutch">{{ .Dutch }}</a>
+								<a href="/lang/german" name="German">{{ .German }}</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-4"></div>
+					<div class="col-2">
+						<form action="/lang/english/contact" method="GET">
+							<button class="btn btn-light">{{ .Contact }}</button>
+						</form>
+					</div>
+					<!-- Right spacing -->
+					<div class="col-1"></div>
+				</div>
+			</div>
+			{{ end }}
+
+
+      <!-- Main text of the page -->
+      <div class="row vertical-center">
+        <div class="col-6"></div>
+        <div class="col-5">
+          <h1 class="text-primary">{{ .Title }}</h1>
+          <h2 class="text-secondary">{{ .Subtitle }}</h2>
+
+					<!-- Redirect button to choose_params.html -->
+					<form action="/lang/english/chooseParams" method="GET">
+						<button class="btn btn-primary">{{ .Button }}</button>
+					</form>
+	      </div>
+			</div>
+  </div>
+	</body>
+</html>
