@@ -5,7 +5,7 @@ steps:
       - '-t'
       - gcr.io/persian-365010/persian-website-golang
       - '-f'
-      - docker/golang/Dockerfile
+      - docker/V2/Dockerfile
       - .
   - name: gcr.io/cloud-builders/docker
     args:
