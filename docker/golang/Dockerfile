@@ -4,6 +4,7 @@ RUN go get github.com/go-sql-driver/mysql
 RUN go get github.com/gorilla/mux
 COPY . .
 
-WORKDIR /go/golang
+# WORKDIR /go/golang
+WORKDIR /go/V2
 ENTRYPOINT [ "/bin/bash", "-c" ]
 CMD [ "go run *.go" ]
